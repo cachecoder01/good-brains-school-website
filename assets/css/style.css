@@ -18,14 +18,6 @@ a {
 p {
     color: #777676;
 }
-input:focus {
-    border: thin solid #C5A253;
-    box-shadow: 0px 2px 4px #caaa5e;
-}
-textarea:focus {
-    border: thin solid #C5A253;
-    box-shadow: 0px 2px 4px #caaa5e;
-}
 
 /*==== header ====*/
 header {
@@ -79,7 +71,7 @@ nav {
     position: absolute;
     display: flex;
     padding: 20px;
-    right: 40px;
+    right: 20px;
     color: #0a0f1f;
 }
 .nav-menu a {
@@ -87,11 +79,10 @@ nav {
     color: inherit;
 }
 .nav-menu a:hover {
-    color: #0740d0;
-    font-size: 18px;
+    color:  #0363ff;
 }
 .nav-menu a.active {
-    color: #0740d0;
+    color:  #0363ff;
 }
 .nav-menu li{
     list-style-type: none;
@@ -100,23 +91,14 @@ nav {
     text-transform: uppercase;
 }
 .apply-btn {
-    background-color: #0740d0;
+    background-color: #0363ff;
     padding: 5px 12px;
     color: white;
     border-radius: 8px;
     margin: 10px auto;
 }
-
-.social-links li a {
-    border: thin solid #310D0D;
-    padding: 7px;
-}
-.social-links li a:hover {
-    background-color: #310D0D;
+.apply-btn a:hover {
     color: white;
-}
-.social-links li i {
-    font-size: 20px;
 }
 
 .hamburger {
@@ -131,7 +113,7 @@ nav {
 
 .hero-content {
     position: absolute;
-    top: 200px;
+    top: 160px;
     z-index: 99;
     width: 900px;
     color: white;
@@ -141,14 +123,14 @@ nav {
 }
 .hero-text  h1{
     color: white;
-    font-size: 60px;
+    font-size: 70px;
     bottom: 0px;
     font-weight: 800;
     line-height: 1.1;
 }
 .hero-text p {
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 1px;
 }
 .hero-cta {
@@ -196,21 +178,22 @@ nav {
 
 /*=== sections ===*/
 .section-title {
-    text-transform: uppercase;
-    font-size: 30px;
+    text-transform: capitalize;
+    font-size: 35px;
     color: #0a0f1f;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
-    display: block;
 }
 .section-description {
     text-align: center;
     font-size: 20px;
     color: #0a0f1f;
+    width: 60%;
+    margin: 10px auto 30px;
 }
 .more-btn {
-    background-color: #0740d0;
+    background-color: #0363ff;
     border-radius: 8px;
     color: white;
     width: 150px;
@@ -219,16 +202,34 @@ nav {
     margin: 20px auto;
     animation: bounce 1.5s infinite;
 }
+.fa-container {
+    background-color: #cadaf5;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.fa-container i {
+    color: #0363ff;
+    margin: 14px auto;
+    font-size: 22px;
+}
+.div-title {
+    text-transform: uppercase;
+    color: #2b2c33;
+    font-weight: bold;
+    margin: 10px;
+}
 
 /*==== About ====*/
 .about-background {
-    background-color: #eee;
+    background-color: #f6f4f4fe;
 }
 .about {
     width: 80%;
     margin: auto;
     gap: 20px;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .about-text-container {
     display: flex;
@@ -240,24 +241,15 @@ nav {
     background-color: white;
     border-radius: 8px;
     border: thin solid #b5b3b3;
-    padding: 10px;
+    padding: 20px;
     width: 300px;
-}
-.about-text-title {
     text-align: center;
-    font-size: 30px;
-    letter-spacing: 3px;    
+}
+.fa-container {
+    margin: auto;
 }
 .about p {
     color: #777676;
-}
-.about a {
-    color: white;
-    text-decoration: none;
-}
-.about .cta-button-about {
-    background-color: #C5A253;
-    width: 100px;
 }
 
 
@@ -404,6 +396,7 @@ nav {
 /*==== News ===*/
 .news-background {
     background-color: #eee;
+    z-index: -2;
 }
 .news {
     width: 80%;
@@ -425,138 +418,59 @@ nav {
     width: 300px;
 }
 
-.newsletter img {
-    height: 300px;
+
+/*=========================================================
+	10 -> NEWSLETTER
+===========================================================*/
+
+#newsletter.section {
+  border-top: 2px solid #E4E7ED;
+  border-bottom: 3px solid #0740d0;
+  margin-top: 30px;
 }
-.newsletter-content {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    width: 95%;
-    margin: auto;
+.newsletter {
+  text-align: center;
 }
-.newsletter-content .tag {
-    color: white;
+.newsletter p {
+  font-size: 24px;
 }
-.newsletter-container {
-    width: 95%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+.newsletter form {
+  position: relative;
+  max-width: 520px;
+  margin: 30px auto;
 }
-.newsletter-text {
-    width: 65%;
-}
-.newsletter-content-title {
-    color: white;
-    font-size: 25px;
-    letter-spacing: 3px;
-}
-.newsletter-form {
-    width: 25%;
-    margin: auto;
-}
-.newsletter-form input {
-    background-color: #eee;
-    border: thin solid #eee;
-    padding: 10px;
-    color: white;
-    width: 200px;
-    margin: 10px auto;
-    outline: none;
-}
-.newsletter-form input.submit {
-    background-color: rgb(220, 11, 11);
-    width: 220px;
-    border: thin solid rgb(220, 11, 11);
-    text-transform: uppercase;
+.newsletter form:after {
+  content: "\f003";
+  font-family: FontAwesome;
+  position: absolute;
+  font-size: 160px;
+  color: #E4E7ED;
+  top: 15px;
+  -webkit-transform: translateY(-50%) rotate(15deg);
+  -ms-transform: translateY(-50%) rotate(15deg);
+  transform: translateY(-50%) rotate(15deg);
+    z-index: 1;
+  left: -90px;
 }
 
-/*==== Services ====*/
-.services-background {
-    background-color: #eee;
-    padding: 1px 5px;
-    padding-bottom: 50px;
-}
-.services {
-    width: 85%;
-    margin: auto;
-    padding: 30px 0px;
-}
-.services .tag {
-    color: #0a0f1f;
-}
-.service-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 50px;
-}
-.service-card-container a {
-    background-color: white;
-    width: 300px;
-    padding: 20px;
-}
-.service-card-container a:hover {
-    box-shadow: 0px 4px 13px #310D0D;
-}
-.service-card i {
-    color: #310D0D;
-}
-.service-card h2 {
-    color: #0a0f1f;
-}
-.service-card .get {
-    color: #777676;
-    text-decoration: underline;
-    text-align: left;
+.newsletter form .input {
+  width: calc(90% - 160px);
+  margin-right: -4px;
+  border-radius: 40px 0px 0px 40px;
+  padding: 12px;
+  border: thin solid #eee;  
 }
 
-/*==== Works ====*/
-.works-background {
-    background-color: #eee;
+.newsletter form .newsletter-btn {
+  width: 160px;
+  height: 40px;
+  font-weight: 700;
+  background: rgb(220, 11, 11);
+  color: #FFF;
+  border: none;
+  border-radius: 0px 40px 40px 0px;
 }
-.works {
-    width: 90%;
-    margin: auto;
-    padding: 30px 0px;
-}
-.works .tag {
-    color: #0a0f1f;
-}
-.works-container {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 0;
-    gap: 20px;
-    justify-content: center;
-}
-.work {
-    width: 300px;
-    background-color: white;
-    padding: 15px;
-}
-.work .title {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    text-align: center;
-}
-.writting-container {
-    width: 250px;
-    height: 200px;
-    overflow: hidden;
-    margin: auto;
-}
-.work p {
-    text-align: center;
-}
-.work a {
-    color: #777676;
-    text-decoration: underline;
-}
+
 
 /*==== Reviews ====*/
 .reviews {
@@ -638,28 +552,19 @@ nav {
 }
 
 /*==== Contact ====*/
-.contact-background {
-    background: #1c1e29;
-    width: 100%;
-}
 .contact {
     width: 85%;
     margin: auto;
     padding: 30px 0;
 }
-.contact-content {
+.contact-container {
     display: flex;
     flex-wrap: wrap;
 }
-.contact-content-child {
+.contact-container-child {
     flex: 1;
 }
-.contact .section-description, .tag {
-    color: white;
-}
-.contact .section-title {
-    color: #C5A253;
-}
+
 
 .contact .social-links {
     color: white;
@@ -703,6 +608,10 @@ nav {
 }
 
 /*=== Footer ===*/
+footer {
+    width: 100%;
+    background-color: #0363ff;
+}
 .footer-container {
     display: flex;
     flex-wrap: wrap;
