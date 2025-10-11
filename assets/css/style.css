@@ -188,7 +188,6 @@ nav {
 .section-description {
     text-align: center;
     font-size: 20px;
-    color: #0a0f1f;
     width: 60%;
     margin: 10px auto 30px;
 }
@@ -218,7 +217,7 @@ nav {
     text-transform: uppercase;
     color: #2b2c33;
     font-weight: bold;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 /*==== About ====*/
@@ -245,13 +244,15 @@ nav {
     width: 300px;
     text-align: center;
 }
+.about-text:hover {
+    border: thin solid #0363ff;
+}
 .fa-container {
     margin: auto;
 }
 .about p {
     color: #777676;
 }
-
 
 /*==== Teams ====*/
 .teams {
@@ -314,9 +315,6 @@ nav {
     margin: auto;
     padding: 20px;
 }
-.stats .tag {
-    color: rgb(146, 14, 14);
-}
 .stats-container {
     margin: 0 auto;
     display: flex;
@@ -330,15 +328,18 @@ nav {
 .stat-info {
     width: 70%;
     margin: auto;
+    text-align: center;
+}
+.stat .fa-container {
+    background-color: rgb(241, 200, 200);
+}
+.stat .fa-container i {    
+    color: rgb(220, 11, 11);
 }
 .count {
     color: white;
     font-size: 50px;
     font-weight: bold;
-}
-.count-border {
-    border: thin solid rgb(180, 16, 16);
-    width: 50px;
 }
 .count-title {
     text-transform: uppercase;
@@ -362,13 +363,25 @@ nav {
     background-color: white;
     border-radius: 8px;
     border: thin solid #b5b3b3;
-    padding: 10px;
+    padding: 20px;
     width: 300px;
 }
-.about-text-title {
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 3px;    
+.academics-text:hover {
+    margin-top: -5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.academics .fa-container {
+    margin-left: 0;
+}
+.red .fa-container {    
+    background-color: rgb(241, 200, 200);
+}
+.red .fa-container i {
+    color: rgb(220, 11, 11);
+}
+.academics-text a {
+    color: #777676;
+    text-decoration: underline;
 }
 
 /*==== Gallery ====*/
