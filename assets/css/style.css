@@ -180,7 +180,7 @@ nav {
 .section-title {
     text-transform: capitalize;
     font-size: 35px;
-    color: #0a0f1f;
+    color: #202433;
     font-weight: 800;
     margin-bottom: 5px;
     text-align: center;
@@ -394,25 +394,50 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    align-items: flex-start;
 }
 .img {
     width: 390px;
-    height: 250px;
     border-radius: 8px;
-    border: thin solid #0740d0;
     overflow: hidden;
+    position: relative;
 }
 .img img {
     width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.img:hover img {
+    transform: scale(1.1);
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(3, 99, 255, 0.2), rgba(3, 99, 255, 0.7));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.overlay p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+}
+.img:hover .overlay {
+    opacity: 1;
 }
 
 /*==== News ===*/
 .news-background {
-    background-color: #eee;
+    background-color: #f6f4f4fe;
     z-index: -2;
 }
 .news {
-    width: 80%;
+    width: 90%;
     margin: auto;
     gap: 20px;
     padding: 50px 0;
@@ -427,18 +452,37 @@ nav {
     background-color: white;
     border-radius: 8px;
     border: thin solid #b5b3b3;
-    padding: 10px;
+    padding: 20px;
     width: 300px;
 }
+.news-head {
+    display: flex;
+    width: 99%;
+    margin: auto;
+}
+.news-head .child {
+    flex: 1;
+}
+.news .category {
+    background-color: rgb(220, 11, 11);
+    border-radius: 12px;
+    color: #fff;
+    font-size: small;
+    text-align: center;
+    width: 100px;
+}
+.date {
+    text-align: right;
+    color: #777676;
+}
+.news-box h2 {
+    font-size: 18px;
+    text-transform: capitalize;
+}
 
-
-/*=========================================================
-	10 -> NEWSLETTER
-===========================================================*/
-
+/*=== Newsletter ===*/
 #newsletter.section {
   border-top: 2px solid #E4E7ED;
-  border-bottom: 3px solid #0740d0;
   margin-top: 30px;
 }
 .newsletter {
@@ -462,20 +506,19 @@ nav {
   -webkit-transform: translateY(-50%) rotate(15deg);
   -ms-transform: translateY(-50%) rotate(15deg);
   transform: translateY(-50%) rotate(15deg);
-    z-index: 1;
+    z-index: -1;
   left: -90px;
 }
-
 .newsletter form .input {
-  width: calc(90% - 160px);
+  width: calc(100% - 160px);
   margin-right: -4px;
   border-radius: 40px 0px 0px 40px;
   padding: 12px;
-  border: thin solid #eee;  
+  border: thin solid white;
+  z-index: -1;
 }
-
 .newsletter form .newsletter-btn {
-  width: 160px;
+  width: 120px;
   height: 40px;
   font-weight: 700;
   background: rgb(220, 11, 11);
@@ -548,11 +591,7 @@ nav {
 }
 
 /*==== Newsletter ====*/
-.newsletter {
-    width: 95%;
-    margin: 50px auto;
-    position: relative;
-}
+
 
 .newsletter .form_message {
     width: 30%;
