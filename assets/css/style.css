@@ -57,9 +57,6 @@ nav {
     padding: 0px 20px;
 }
 .brand-img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -67,14 +64,13 @@ nav {
     margin: 10px;
 }
 .brand-name h2 {
-    padding: 10px 0;
     color: #0a0f1f;
 }
 
 .nav-menu {
     position: absolute;
     display: flex;
-    padding: 20px;
+    padding: 10px 20px;
     right: 20px;
     color: #0a0f1f;
 }
@@ -117,9 +113,9 @@ nav {
 
 .hero-content {
     position: absolute;
-    top: 160px;
+    top: 140px;
     z-index: 99;
-    width: 900px;
+    width: 85%;
     color: white;
     margin: auto;
     justify-content: center;
@@ -129,7 +125,7 @@ nav {
     color: white;
     font-size: 70px;
     bottom: 0px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.1;
 }
 .hero-text p {
@@ -315,7 +311,7 @@ nav {
     margin: auto;
 }
 .stats {
-    width: 80%;
+    width: 75%;
     margin: auto;
     padding: 20px;
 }
@@ -323,10 +319,11 @@ nav {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .stat {
     flex: 1;
-    margin: auto;
+    margin: 10px auto;
     justify-content: center;
 }
 .stat-info {
@@ -354,7 +351,7 @@ nav {
 
 /*==== Academics ====*/
 .academics {
-    width: 85%;
+    width: 90%;
     margin: 100px auto 50px auto;
 }
 .academics-text-container {
@@ -390,7 +387,7 @@ nav {
 
 /*==== Gallery ====*/
 .gallery {
-    width: 90%;
+    width: 95%;
     margin: 100px auto;
 }
 .img-container {
@@ -440,6 +437,7 @@ nav {
     background-color: #f6f4f4fe;
     z-index: -2;
     margin: 100px auto;
+    border-radius: 30px 30px 0 0;
 }
 .news {
     width: 90%;
@@ -580,7 +578,7 @@ nav {
     color: #4e5263;
 }
 /* Desktop - show 4 at a time */
-@media (min-width: 768px) {
+@media (min-width: 820px) {
     .review {
         min-width: calc(25% - 15px);
     }
@@ -629,12 +627,14 @@ nav {
 .contact-info span {
     display: block;
     color: #777676;
+    width: 250px;
 }
 .school-hour {
     background-color: #f6f4f4fe;
     border-radius: 8px;
-    width: 400px;
+    width: 90%;
     padding: 20px;
+    margin: 10px auto;
 }
 .school-hour p {
     margin: 0;
