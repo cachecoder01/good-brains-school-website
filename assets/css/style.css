@@ -28,7 +28,7 @@ header {
     width: 100%;
 }
 .hero {
-    position:relative;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -752,26 +752,94 @@ span a {
     
 }
 
-/*==== PORTFOLIO PAGE ====*/
-.portfolio .hero {
-    position:relative;
+/*==== ABOUT PAGE ====*/
+.about-page .hero {
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     background: white;
     background-size:cover;
-    height: 120px;
+    height: 100px;
     width: 100%;
     overflow: hidden;
     margin-top: 0;
+    border: thin solid ;
 }
-.portfolio nav {
-    color: #0a0f1f;
-    font-weight: bold;
+main {
+    margin-top: 150px;
 }
-.portfolio .bar {
-    background: #0a0f1f;
+.tag {
+    border-left: 10px solid rgb(220, 11, 11);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
+.header {
+    background-color: #0363ff;
+    width: 95%;
+    margin: 30px auto;
+}
+.header-content {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+}
+.header-content .tag {
+    color: white;
+}
+.header .section-title {
+    color: white;
+}
+.header p {
+    color: white;
+}
+
+.about-content {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px auto;
+}
+.about-content-child {
+    flex: 1;
+}
+.about-content-child img {
+    width: 500px;
+    border-radius: 8px;
+}
+
+.history {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.head-mistress {
+    background-color: #f6f4f4fe;
+    border-radius: 30px;
+    width: 75%;
+    margin: 50px auto;
+    padding: 20px;
+}
+.head-mistress .div-title {
+    text-align: center;
+}
+.head-mistress-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.head-mistress-content .child {
+    flex: 1;
+}
+.head-mistress-content .child img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
 .category-name {
     padding: 50px;
     text-align: center;
@@ -933,7 +1001,7 @@ span a {
     display: block;
 }
 
-/*=== SERVICE FORM PAGE ===*/
+/*=== SERVICE FORM PAGE ===
 .header {
     background-color: #0a0f1f;
     width: 95%;
