@@ -3,10 +3,14 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6; /* Improves readability */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #202433;
+    font-size: 18px;
+    font-weight: 400;
+    
 }
 html {
     scroll-behavior: smooth;
@@ -198,7 +202,7 @@ nav {
     width: 150px;
     text-align: center;
     padding: 10px;
-    margin: 20px auto;
+    margin: 50px auto;
     animation: bounce 1.5s infinite;
 }
 .fa-container {
@@ -435,6 +439,7 @@ nav {
 .news-background {
     background-color: #f6f4f4fe;
     z-index: -2;
+    margin: 100px auto;
 }
 .news {
     width: 90%;
@@ -506,7 +511,6 @@ nav {
   -webkit-transform: translateY(-50%) rotate(15deg);
   -ms-transform: translateY(-50%) rotate(15deg);
   transform: translateY(-50%) rotate(15deg);
-    z-index: -1;
   left: -90px;
 }
 .newsletter form .input {
@@ -515,7 +519,8 @@ nav {
   border-radius: 40px 0px 0px 40px;
   padding: 12px;
   border: thin solid white;
-  z-index: -1;
+  position: relative;
+  z-index: 1;
 }
 .newsletter form .newsletter-btn {
   width: 120px;
@@ -527,11 +532,20 @@ nav {
   border-radius: 0px 40px 40px 0px;
 }
 
+.newsletter .form_message {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 200px auto;
+}
 
 /*==== Reviews ====*/
 .reviews {
     width: 90%;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 .reviews .tag {
     color: #0a0f1f;
@@ -539,16 +553,17 @@ nav {
 .slider-wrapper {
     position: relative;
     overflow: hidden;
+    margin-top: 0;
 }
 .reviews-container {
     display: flex;
     transition: transform 0.4s ease-in-out;
     gap: 20px;
-    margin: 50px auto;
+    margin: auto;
     padding: 20px;
 }
 .review {
-    background-color: #eee;
+    background-color: #f6f4f4fe;
     text-align: center;
     padding: 15px;
     min-width: 100%;
@@ -557,7 +572,7 @@ nav {
 }
 .review-role {
     letter-spacing: 2px;
-    color: #C5A253;
+    color: #0363ff;
 }
 .review-date {
     font-size: small;
@@ -590,19 +605,6 @@ nav {
     right: 0;
 }
 
-/*==== Newsletter ====*/
-
-
-.newsletter .form_message {
-    width: 30%;
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 200px auto;
-}
-
 /*==== Contact ====*/
 .contact {
     width: 85%;
@@ -616,25 +618,37 @@ nav {
 .contact-container-child {
     flex: 1;
 }
-
-
-.contact .social-links {
-    color: white;
+.contact-info {
     display: flex;
-    align-items: center;
+    margin: 15px 0;
 }
-.contact .social-links li {
-    display: inline;
-    list-style-type: none;
-    padding: 10px;
+.contact .fa-container {
+    margin: 0;
+    margin-right: 10px;
 }
-.contact a:hover {
-    color: #310D0D;
+.contact-info span {
+    display: block;
+    color: #777676;
+}
+.school-hour {
+    background-color: #f6f4f4fe;
+    border-radius: 8px;
+    width: 400px;
+    padding: 20px;
+}
+.school-hour p {
+    margin: 0;
 }
 .contact form {
-    width: 70%;
+    width: 80%;
     margin: 10px auto;
     justify-content: center;
+    border: thin solid #cadaf5;
+    border-radius: 8px;
+    padding-bottom: 20px;
+}
+.contact form h2 {
+    text-align: center;
 }
 .contact input, textarea {
     display: block;
@@ -642,21 +656,19 @@ nav {
     margin: 10px auto;
     padding: 10px;
     outline: none;
+    border-radius: 8px;
+    border: thin solid #cadaf5;
+    font-size: 16px;
 }
 .contact textarea {
     height: 100px;
 }
 .contact .submit {
-    background-color: #C5A253;
+    background-color: #0363ff;
     width: 85%;
-    border: thin solid #C5A253;
+    border: thin solid #0363ff;
     color: white;
     text-transform: uppercase;
-    font-size: 16px;
-}
-.contact hr {
-    border: thin solid #4e5263;
-    margin: 40px 2px;
 }
 
 /*=== Footer ===*/
@@ -669,61 +681,32 @@ footer {
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
+    color: #fff;
+    padding: 30px 0;
+    gap: 20px;
 }
 .footer-container-child {
     flex: 1;
 }
-.footer-newsletter {
-        display: none;
-    }
-.footer-container h3 {
+footer .div-title {
     color: white;
-    letter-spacing: 1px;
 }
-.nav-container {
+footer p {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+footer a:hover {
+    color: rgb(220, 11, 11);
+}
+
+.copyrights {
+    border-top: thin solid #f6f4f4fe;
+    display: flex;
+    flex-wrap: wrap;
     width: 90%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-.nav {
-    width: 50%;
-}
-.contact-info {
-    display: flex;
-}
-.contact-info ul {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -35px;
-}
-.contact-info li {
-    list-style-type: none;
-    width: 46%;
-    padding: 10px;
-    display: flex;
-}
-.contact-info i {
-    color: white;
-    font-size: 25px;
-    border: thin solid #310D0D;
-    padding: 10px;
-}
-.contact-info-text {
-    padding-left: 10px;
-}
-.contact .info {
-    color: #b1acac;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-.copyrights {
-    border-top: 2px solid #4e5263;
-    margin-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 20px 0;
 }
 .copyrights-child {
     flex: 1;
@@ -731,14 +714,42 @@ footer {
 .right {
     text-align: right;
 }
-.copyrights p {
+.copyrights .me {
     color: #adacac;
 }
-.copyrights .me {
-    color: #777676;
-}
 span a {
-    color: #777676;
+    color: #adacac;
+}
+
+.social-links {
+    display: flex;
+}
+.link-container {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #2773ed;
+    margin-right: 15px;
+}
+.link-container i {
+    font-size: 20px;
+    margin: 10px;
+}
+.social-links li{
+    padding: 10px;
+    border: thin solid;
+}
+.social-links li a {
+    border: thin solid white;
+    padding: 7px;
+}
+.social-links li a:hover {
+    background-color: #310D0D;
+    color: white;
+}
+.social-links li i {
+    
 }
 
 /*==== PORTFOLIO PAGE ====*/

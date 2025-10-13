@@ -60,11 +60,9 @@
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
                     <div class="social-links">
-                        <ul>
-                            <li><a href="https://www.instagram.com/veracityandquill_?igsh=MWU0OGpod3Q0dzV5ZA==" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        </ul>
+                        <div class="link-container"><a href=""><i class="fab fa-facebook"></i></a></div>
+                        <div class="link-container"><a href=""><i class="fab fa-instagram"></i></a></div>
+                        <div class="link-container"><a href=""><i class="fab fa-twitter"></i></a></div>
                     </div>
                 </div>
 
@@ -262,17 +260,13 @@
                     <!-- NEWSLETTER -->
 		            <div id="newsletter" class="section">
 			            <div class="container">
-				            <div class="row">
-					            <div class="col-md-12">
-						            <div class="newsletter">
-							            <p>Sign Up for the <strong>NEWSLETTER</strong></p>
-							            <form>
-								            <input class="input" type="email" placeholder="Enter Your Email">
-								            <button class="newsletter-btn"><i class="far fa-envelope"></i> Subscribe</button>
-							            </form>
-						            </div>
-					            </div>
-				            </div>
+				            <div class="newsletter">
+						        <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+						        <form>
+						            <input class="input" type="email" placeholder="Enter Your Email">
+						            <button class="newsletter-btn"><i class="far fa-envelope"></i> Subscribe</button>
+					            </form>
+						    </div>
 			            </div>
 		            </div>
 
@@ -283,8 +277,7 @@
         <section id="Reviews">
             <div class="reviews">
                 <div class="section-title">Reviews</div>
-                <div class="section-description">What Our Clients Say</div>
-                <div class="tag">Your words inspire us as much as we inspire you</div>
+                <p class="section-description">What Parent and Students Say About Us</p>
                 
                 <div data-aos="fade-left" class="slider-wrapper">
                     <button class="slider-btn prev"><i class="fa fa-angle-left"></i></button>
@@ -329,46 +322,49 @@
         <section id="Contact">
             <div class="contact">
                 <div class="section-title">- Contact Us -</div>
-                <div class="section-description">Get in touch with us for admissions, inquiries, or to schedule a visit</div>
+                <p class="section-description">Get in touch with us for admissions, inquiries, or to schedule a visit</p>
                 <div class="contact-container">
                     <div class="contact-container-child">
-                        <div>Get In Touch</div>
+                        <div class="div-title">Get In Touch</div>
                         <div>
                             <div>
-                                <div>
-                                    <div><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="contact-info">
+                                    <div class="fa-container"><i class="fas fa-map-marker-alt"></i></div>
                                     <div>
                                         <strong>Our Location</strong>
-                                        <p>Gwagwalada</p>
+                                        <span>Gwagwalada, F.C.T Abuja</span>
                                     </div>
                                 </div>
-                                <div>
-                                    <div><i class="fas fa-phone"></i></div>
+                                <div class="contact-info">
+                                    <div class="fa-container"><i class="fas fa-phone"></i></div>
                                     <div>
                                         <strong>Phone</strong>
-                                        <p>+234 918444488</p>
+                                        <span>+234 918444488</span>
                                     </div>
                                 </div>
-                                <div>
-                                    <div><i class="far fa-envelope"></i></div>
+                                <div class="contact-info">
+                                    <div class="fa-container"><i class="far fa-envelope"></i></div>
                                     <div>
                                         <strong>Email</strong>
-                                        <p>goodbrains@gmail.com</p>
+                                        <span>goodbrains@gmail.com</span>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <strong>school hours</strong>
+                            <div class="school-hour">
+                                <div class="div-title">school hours</div>
+                                <p>Monday - Friday: 7:30 AM - 3:00 PM</p>
+                                <p>Saturday - Sunday: Closed</p>
                             </div>
                         </div>
                     </div>
                     <div class="contact-container-child">
                         <div>
-                            <form>
-                                <input data-aos="fade-left" type="text" name="name" placeholder="Enter Name*">
-                                <input data-aos="fade-left" type="email" name="email" placeholder="Enter Email*">
-                                <textarea data-aos="fade-left" name="message" placeholder="Enter Your Message"></textarea>
-                                <input data-aos="fade-left" type="submit" class="submit" value="send">
+                            <form data-aos="fade-left">
+                                <h2>Send Us a Message</h2>
+                                <input type="text" name="name" placeholder="Enter Name*">
+                                <input type="email" name="email" placeholder="Enter Email*">
+                                <textarea name="message" placeholder="Enter Your Message"></textarea>
+                                <input type="submit" class="submit" value="send">
                             </form>
                         </div>
                     </div>
@@ -379,14 +375,41 @@
         <footer>
             <div class="footer-container">
                 <div class="footer-container-child">
-                    <div class="title">Good Brains Diamond School</div>
+                    <div class="div-title">Good Brains Diamond School</div>
                     <p>Nurturing bright minds for a better tomorrow through quality education and holistic development.</p>
                 </div>
                 <div class="footer-container-child">
-                    <div>Quik links</div>
+                    <div class="div-title">Quik links</div>
+                    <p><a href="#About">About</a></p>
+                    <p><a href="#Academics">Academics</a></p>
+                    <p><a href="#Gallery">Gallery</a></p>
+                    <p><a href="#News">News</a></p>
+                    <p><a href="#Reviews">Reviews</a></p>
+
                 </div>
-                <div class="footer-container-child"></div>
+                <div class="footer-container-child">
+                    <div class="div-title">Contact</div>
+                    <p>Gwagwalada, F.C.T Abuja</p>
+                    <p>+234 918444488</p>
+                    <p>goodbrains@gmail.com</p>
+                </div>
+                <div class="footer-container-child">
+                    <div class="div-title">follow us</div>
+                    <div class="social-links">
+                        <div class="link-container"><a href=""><i class="fab fa-facebook"></i></a></div>
+                        <div class="link-container"><a href=""><i class="fab fa-instagram"></i></a></div>
+                        <div class="link-container"><a href=""><i class="fab fa-twitter"></i></a></div>
+                    </div>
+                </div>
             </div>
+            <div class="copyrights">
+                <div class="copyrights-child">
+                    <p><span id="footerDate"></span> Good Brains Diamond School | <span class="me">Designed and Developed by <a href="https://cachecoder.site" target="_blank">CacheCoder</a></span></p>
+                </div>
+                            <div class="copyrights-child">
+                                <p class="right">All rights reserved</p>
+                            </div>
+                        </div>    
         </footer>
 
     </main>
