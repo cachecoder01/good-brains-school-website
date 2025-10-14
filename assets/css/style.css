@@ -254,56 +254,6 @@ nav {
     color: #777676;
 }
 
-/*==== Teams ====*/
-.teams {
-    width: 85%;
-    margin: 100px auto;
-}
-.teams .tag {
-    color: #0a0f1f;
-}
-.team-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 50px;
-}
-.team-card {
-    background-color: #eee;
-    width: 300px;
-    padding: 25px;
-    text-align: center;
-}
-.team-card-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    justify-content: center;
-    overflow: hidden;
-    margin: 5px auto;
-}
-.team-name {
-    font-size: 22px;
-}
-.team-links a {
-    display: inline;
-    padding: 5px;
-    border: thin solid #C5A253;
-    margin: 10px;
-}
-.team-links i {
-    color: #C5A253;
-    font-size: 20px;
-}
-.see-more {    
-    width: 120px;
-    background-color: #C5A253;
-    padding: 12px 20px;
-    text-align: center;
-    margin: 15px auto;
-}
-
 /*==== Stats ====*/
 .stats-background {
     background-color: #1751e3;
@@ -736,21 +686,6 @@ span a {
     font-size: 20px;
     margin: 10px;
 }
-.social-links li{
-    padding: 10px;
-    border: thin solid;
-}
-.social-links li a {
-    border: thin solid white;
-    padding: 7px;
-}
-.social-links li a:hover {
-    background-color: #310D0D;
-    color: white;
-}
-.social-links li i {
-    
-}
 
 /*==== ABOUT PAGE ====*/
 .about-page .hero {
@@ -765,10 +700,10 @@ span a {
     width: 100%;
     overflow: hidden;
     margin-top: 0;
-    border: thin solid ;
+    z-index: 99;
 }
 main {
-    margin-top: 150px;
+    margin-top: 130px;
 }
 .tag {
     border-left: 10px solid rgb(220, 11, 11);
@@ -801,7 +736,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    margin: 30px auto;
+    margin: 50px auto;
 }
 .about-content-child {
     flex: 1;
@@ -814,167 +749,173 @@ main {
 .history {
     width: 85%;
     margin: 50px auto;
-}
-
-.head-mistress {
-    background-color: #f6f4f4fe;
-    border-radius: 30px;
-    width: 75%;
-    margin: 50px auto;
-    padding: 20px;
-}
-.head-mistress .div-title {
-    text-align: center;
-}
-.head-mistress-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    background-color: #f6f4f4fe;
+    padding: 15px;
+    border-radius: 8px;
+    justify-content: center;
 }
-.head-mistress-content .child {
+.history-child {
     flex: 1;
 }
-.head-mistress-content .child img {
-    width: 100%;
-    border-radius: 20px;
+.history-child img {
+    width: 400px;
+    border-radius: 10px;
     display: block;
+    margin: 10px auto;
+}
+.history-child .div-title {
+    text-align: center;
+}
+.history-child p {
+    padding: 0 5px;
+}
+.school-activities {
+    margin: 50px auto;
+}
+.school-activities .background {
+    background-color: #f6f4f4fe;
+    padding: 30px;
+}
+.school-activities .div-title {
+    color: #0363ff;
+    text-align: center;
+}
+.school-activities-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px 0;
+}
+.activities {
+    flex: 1;
+}
+.activities .count-title {
+    text-align: center;
+    color: #0363ff;
+    padding: 5px;
 }
 
+.anthem {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #f6f4f4fe;
+    border-radius: 8px;
+    padding: 20px;
+}
+.anthem-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.school-anthem, .school-pledge {
+    flex: 1;
+    text-align: center;
+}
+
+/*==== GELLERY PAGE ====*/
+.gallery-page {
+    border: thin solid #eee;
+    margin-bottom: 50px;
+}
+.gallery-page .gallery {
+    margin: 20px auto;
+}
 .category-name {
     padding: 50px;
     text-align: center;
     font-size: 30px;
     letter-spacing: 3px;
-}
-.portfolios .works-container {
-    background-color: #eee;
+    text-transform: capitalize;
 }
 
-/*==== VIEW_DETAILS PAGE ====*/
-.product {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 50px auto;
-    border: thin solid #eee;
-    justify-content: center;
-}
-.product-child {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-}
-.product-child .title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 10px;
-}
-.product-writing {
-    text-align: center;
-    padding: 5px 5px 30px 5px;
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
 }
-.product-writing p {
-    padding: 0px 20px 20px;
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
 }
-.product-engagement {
-    background-color: #1c1e29;
+.lightbox .close, .lightbox .prev, .lightbox .next {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
     color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
-.engagement {
-    flex: 1;
-    text-align: center;
-    padding: 10px 0;
-}
-.like-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: white;
-}
-.like-btn i.fas {
-  color: #811f1f; /* red for liked heart */
-}
-.like-btn.liked {
-  pointer-events: none; /* avoid further clicks */
-  opacity: 0.95;
-}
-.share-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: white;
-  transition: color 0.2s;
-}
-.share-btn:hover {
-  color: #C5A253;
-}
-.fa-name {
-    display: inline;
-    padding-left: 5px;
-}
-.product-details {
-    background-color: #eee;
-    width: 100%;
-    padding-top: 10px;
-    height: 100%;
-}
-.detail {
-    padding: 5px 20px;
-}
-.detail span {
-    color: #777676;
-}
+.lightbox .close {top: 20px; right: 40px; }
+.lightbox .prev { left: 30px; top: 50%; }
+.lightbox .next { right: 30px; top: 50%; }
 
-/*=== Author ===*/
-.author {
+
+/*==== ACADEMICS PAGE ====*/
+.curriculum {
     width: 85%;
+    margin: 50px auto;
+}
+.curriculum-container {
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    margin: 50px auto;
+    gap: 15px;
     justify-content: center;
+    padding: 20px;
 }
-.author-child {
+.curriculum-container .child {
     flex: 1;
 }
-.author .tag {
-    color: #0a0f1f;
+.curriculum-container .child img {
+    width: 100%;
 }
-.author form {
-    width: 70%;
-    margin: 35px auto;
-    justify-content: center;
+.curriculum .head {
+    display: flex;
 }
-.author input, textarea {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-    outline: none;
+.curriculum .div-title {
+    color: #0363ff;
 }
-.author textarea {
-    height: 100px;
+.age {
+    border-radius: 15px;
+    background-color: #cadaf5;
+    font-size: small;
+    align-self: flex-start;
+    color: #0363ff;
+    padding: 3px 5px;
+    margin: 5px 20px;
 }
-.author .submit {
-    background-color: #C5A253;
+.class {
+    color: rgb(220, 11, 11);
+    font-weight: 500;
+    font-size: 15px;
+    font-weight: bold;
+}
+.subjects {
     width: 85%;
-    border: thin solid #C5A253;
-    color: white;
-    text-transform: uppercase;
-    font-size: 16px;
+}
+.subjects .class {
+    color: #0363ff;
+}
+.subject-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.subject {
+    flex: 1;
+    font-size: 15px;
+    border: thin solid;
+
 }
 
 .form_message {
@@ -999,70 +940,4 @@ main {
 }
 .form_message span {
     display: block;
-}
-
-/*=== SERVICE FORM PAGE ===
-.header {
-    background-color: #0a0f1f;
-    width: 95%;
-    margin: 30px auto;
-}
-.header-content {
-    width: 90%;
-    margin: auto;
-    padding: 30px 0;
-}
-.header-content .tag {
-    color: white;
-}
-.header .section-title {
-    color: white;
-}
-.service-form {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 100px auto;
-    gap: 20px;
-}
-.service-form-child {
-    flex: 1;
-    background-color: #b6c4eb;
-}
-.service-form-img  img {
-    width: 90%;
-    margin: 5%;
-}
-.service-form-child .form {
-    background-color: white;
-    height: 100%;
-}
-.service-form-child form {
-    width: 80%;
-    margin: auto;
-    padding: 30px 0;
-    overflow: hidden;
-}
-.service-form-child input {
-    padding: 10px;
-    margin: 10px auto;
-    background-color: #eee;
-    width: 100%;
-    outline: none;
-    border: #eee;
-}
-.service-form-child textarea {
-    padding: 10px;
-    margin: 10px auto;
-    background-color: #eee;
-    width: 100%;
-    outline: none;
-    border: #eee;
-    height: 100px;
-}
-.service-form-child input.submit {
-    background-color: #C5A253;
-    color: white;
-    font-size: 18px;
-    text-transform: uppercase;
 }
