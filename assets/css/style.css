@@ -577,7 +577,7 @@ nav {
 .contact-info span {
     display: block;
     color: #777676;
-    width: 250px;
+    width: 350px;
 }
 .school-hour {
     background-color: #f6f4f4fe;
@@ -865,6 +865,9 @@ main {
     width: 85%;
     margin: 50px auto;
 }
+.curriculum .div-title {
+    text-align: center;
+}
 .curriculum-container {
     background-color: #fff;
     display: flex;
@@ -872,12 +875,14 @@ main {
     gap: 15px;
     justify-content: center;
     padding: 20px;
+    margin: 20px auto;
 }
 .curriculum-container .child {
     flex: 1;
 }
 .curriculum-container .child img {
     width: 100%;
+    margin: 50px auto;
 }
 .curriculum .head {
     display: flex;
@@ -912,10 +917,86 @@ main {
     gap: 10px;
 }
 .subject {
-    flex: 1;
+    width: 31%;
     font-size: 15px;
-    border: thin solid;
+}
+.enroll-btn {
+    border: 2px solid rgb(220, 11, 11);
+    border-radius: 8px;
+    width: 150px;
+    padding: 5px;
+    text-align: center;    
+    animation: bounce 1.5s infinite;
+    margin: 10px auto;
+}
+.enroll-btn a {
+    color: rgb(220, 11, 11);
+}
+.admission-process {
+    width: 100%;
+    background-color: white;
+    margin: 50px auto;
+    padding: 30px 0;
+}
+.admission-process h1 {
+    color: #0363ff;
+    text-align: center;
+}
+.process-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+}
+.process {
+    flex: 1;
+    padding: 20px;
+    border: thin solid #0363ff;
+    border-radius: 8px;
+}
+.number {
+    background-color: #0363ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    color: white;display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: larger;
+}
 
+.requirements {
+    width: 95%;
+    margin: 50px auto;
+}
+.requirements h1 {
+    color: #0363ff;
+    text-align: center;
+    margin-bottom: 0;
+}
+.requirements p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.requirement-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.requirement {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+}
+.requirement .div-title {
+    color: #0363ff;
 }
 
 .form_message {

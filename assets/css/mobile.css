@@ -128,19 +128,15 @@
         width: 90%;
     }
 
-    /*=== Newsletter ===*/
-    .newsletter {
-    }
-    .footer-newsletter {
-        display: block;
-        text-align: center;
-    }
-
     /*=== Contact ===*/
     .contact {
-        width: 90%;
-        margin: 0 4%;
+        width: 80%;
+        margin: 0 auto;
     }
+    .contact-info span {
+        width: 200px;
+    }
+
     .contact form {
         width: 90%;
     }
