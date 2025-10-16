@@ -1026,6 +1026,42 @@ main {
     color: #0363ff;
 }
 
+.enrollment form {
+    width: 40%;
+    margin: 10px auto;
+    justify-content: center;
+    border: thin solid #cadaf5;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    padding: 50px;
+    background-color: white;
+}
+.enrollment label {
+    color: #777676;
+}
+.enrollment input, select {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    outline: none;
+    border-radius: 8px;
+    border: thin solid #cadaf5;
+    font-size: 16px;
+    margin: 10px auto;
+}
+.enrollment select {
+    width: 99%;
+}
+.enrollment textarea {
+    height: 100px;
+}
+.enrollment .submit {
+    background-color: #0363ff;
+    border: thin solid #0363ff;
+    color: white;
+    text-transform: uppercase;
+}
+
 .form_message {
     width: 20%;
     padding: 20px;
