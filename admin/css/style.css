@@ -1,0 +1,243 @@
+body {
+    width: 100%;
+    background-color: #eee;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6; /* Improves readability */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #777676;
+}
+input:focus {
+    border: thin solid #C5A253;
+    box-shadow: 0px 2px 4px #caaa5e;
+}
+textarea:focus {
+    border: thin solid #C5A253;
+    box-shadow: 0px 2px 4px #caaa5e;
+}
+
+/*==== header ====*/
+header {
+    width: 100%;
+}
+/* Nav*/
+nav {
+    display: flex;
+    color: white;
+    position: relative;
+}
+.brand-img {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px;
+}
+.brand-name h2 {
+    padding: 10px 2px;
+}
+
+.back {
+    padding: 10px;
+    margin: 10px;
+}
+.back i {
+    font-size: 50px;
+}
+.back a{
+    color: #C5A253;
+}
+.logout {
+    background-color: #C5A253;
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    text-align: center;
+    padding: 5px 10px;
+}
+.logout a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-form {
+    width: 30%;
+    margin: 200px auto;
+}
+form {
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+input, select {
+    background-color: #eee;
+    border: thin solid #eee;
+    padding: 10px;
+    width: 85%;
+    margin: 15px 20px;
+    outline: none;
+    justify-content: center;
+}
+select {
+    width: 90%;
+}
+input.submit {
+    background-color: #C5A253;
+    border: thin solid #C5A253;
+    text-transform: uppercase;
+    width: 90%;
+    color: white;
+}
+.menu_bar {
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 150px auto;
+    width: 30%;
+}
+.menu_bar .title {
+    text-align: center;
+}
+.menu {
+    border-top: thin solid #777676;
+    padding: 10px;
+}
+.menu a {
+    color: #caaa5e;
+    font-size: 18px;
+}
+
+/* Team */
+.team-form {
+    width: 30%;
+    margin: 80px auto;
+}
+.team-form textarea {
+    background-color: #eee;
+    border: thin solid #eee;
+    padding: 10px;
+    width: 85%;
+    margin: 15px 20px;
+    outline: none;
+    justify-content: center;
+    height: 100px;
+}
+
+/* Product */
+.poet-form {
+    width: 40%;
+    margin: 80px auto;
+}
+.poet-form textarea {
+    background-color: #eee;
+    border: thin solid #eee;
+    padding: 10px;
+    width: 90%;
+    margin: 15px;
+    outline: none;
+    justify-content: center;
+    height: 200px;
+}
+.poet-form input {
+    background-color: #eee;
+    border: thin solid #eee;
+    padding: 10px;
+    width: 90%;
+    margin: 15px;
+    outline: none;
+    justify-content: center;
+}
+.poet-form input.submit {
+    background-color: #C5A253;
+    border: thin solid #C5A253;
+    text-transform: uppercase;
+    width: 94%;
+    color: white;
+}
+
+.form_message {
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 200px auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .brand-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    }
+    .brand-img img {
+        width: 50px;
+    }
+    .brand-name h2 {
+        font-size: large;
+    }
+    .brand-name span {
+        padding-left: 2px;
+        font-size: small;
+    }
+    .back {
+        padding: 12px 5px;
+        margin: 5px 0;
+    }
+    .back i {
+        font-size: 35px;
+    }
+    .logout {
+        top: 20px;
+        right: 10px;
+        padding: 5px;
+        width: 80px;
+    }
+
+    .login-form {
+        width: 85%;
+    }
+    input {
+        width: 80%;
+    }
+    input.submit {
+        width: 86%;
+    }
+    .menu_bar {
+        width: 70%;
+    }
+    .team-form {
+        width: 80%;
+    }
+    .team-form textarea {
+        width: 80%;
+        margin: 15px 20px;
+        outline: none;
+    }
+    .poet-form {
+        width: 90%;
+    }
+    .poet-form textarea {
+        width: 85%;
+    }
+    .poet-form input {
+        width: 85%;
+    }
+    .poet-form input.submit {
+        width: 92%;
+    }
+}
