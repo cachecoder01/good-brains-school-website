@@ -352,6 +352,7 @@ nav {
     border-radius: 8px;
     overflow: hidden;
     position: relative;
+    border: thin solid #0363ff;
 }
 .img img {
     width: 100%;

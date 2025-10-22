@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+    <link rel="shortcut icon" type="image/icon" href="./assets/images/brand-images/brand-logo1.png" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+
+    <title>Good Brains Diamond School | index</title>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <nav id="navbar">
+                <div class="nav-child">
+                    <a href="index.php">
+                        <div class="brand">
+                            <div class="brand-img">
+                                <img src="assets/images/brand-images/brand-logo1.png" width="75">
+                            </div>
+                            <div class="brand-name">
+                                <h2>Good Brains Diamond School</h2>                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-child">
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Academics">Academics</a></li>
+                            <li><a href="#Gallery">Gallery</a></li>
+                            <li><a href="#News">News</a></li>
+                            <li><a href="#Reviews">Reviews</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                        </ul>
+                        <div class="apply-btn"><a href="academics.html">Apply Now</a></div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <button id="menu-toggle" class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </button>
+                </div>                
+
+                <div id="side-menu" class="side-menu">
+                    <ul>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Academics">Academics</a></li>
+                        <li><a href="#Gallery">Gallery</a></li>
+                        <li><a href="#News">News</a></li>
+                        <li><a href="#Reviews">Reviews</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                        <li><div class="apply-btn"><a href="academics.html">Apply Now</a></div></li>
+                    
+                        <div class="social-links">
+                            <div class="link-container"><a href=""><i class="fab fa-facebook"></i></a></div>
+                            <div class="link-container"><a href=""><i class="fab fa-instagram"></i></a></div>
+                            <div class="link-container"><a href=""><i class="fab fa-twitter"></i></a></div>
+                        </div>
+                    </ul>
+                </div>
+
+            </nav>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-aos="fade-right">Good Brains Diamond School of Scholars International</h1>
+                    <p data-aos="fade-left">Achieving Educational Excellent</p>
+                </div>
+                <div class="hero-cta">
+                    <div class="cta-button-about"><a href="about.html">Learn More</a></div>
+                    <div class="cta-button-services"><a href="academics.html">Apply Now</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="About">
+            <div class="about-background">
+                <div class="about">
+                    <h1 class="section-title"> - About our school - </h1>
+                    <p class="section-description">Good Brains Diamond School is commited in providing exceptional education that shapes the leaders of tomorrow</p>
+                    <div class="about-text-container">
+                        <div data-aos="fade-left" class="about-text">
+                            <div class="fa-container"><i class="fas fa-lightbulb"></i></div>
+                            <div class="div-title">Our mission</div>
+                            <p>To provide quality <strong>EDUCATION</strong> that encourages intellectual curiosity, creativity, and moral integrity. Equipping student to excel in life and contribute positive to the society</p>
+                        </div>
+                        <div data-aos="fade-right" class="about-text">
+                            <div class="fa-container"><i class="far fa-eye"></i></div>
+                            <div class="div-title">Our Vision</div>
+                            <p>To be recognized as a leading institution in nigeria known for fostering academic excellence and producing well-rounded individuals prepared for challenges of the future</p>
+                        </div>
+                        <div data-aos="fade-left" class="about-text">
+                            <div class="fa-container"><i class="far fa-heart"></i></div>
+                            <div class="div-title">Our Value</div>
+                            <p>Integrity, Excellence, Innovation, Respect, and Community - these core values guide everything we do.</p>
+                        </div>
+                    </div>
+                    <div class="more-btn"><a href="about.html">Learn More</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Stats">
+            <div class="stats-background">
+                <div class="stats">
+                    <div class="stats-container">
+                        <div data-aos="fade-right" class="stat">                            
+                            <div class="stat-info">
+                                <div class="fa-container"><i class="fas fa-users"></i></div>
+                                <div class="count">220+</div>
+                                <div class="count-title">Students</div>
+                            </div>                        
+                        </div>    
+                        <div data-aos="fade-right" class="stat">
+                            <div class="stat-info">
+                                <div class="fa-container"><i class="fa fa-chalkboard-teacher"></i></div>
+                                <div class="count">17+</div>
+                                <div class="count-title">Teachers</div>
+                            </div>                        
+                        </div>
+                        <div data-aos="fade-right" class="stat">
+                            <div class="stat-info">
+                                <div class="fa-container"><i class="fas fa-trophy"></i></div>
+                                <div class="count">28+</div>
+                                <div class="count-title">Awards</div>
+                            </div>                        
+                        </div>
+                        <div data-aos="fade-right" class="stat">
+                            <div class="stat-info">
+                                <div class="fa-container"><i class="fas fa-calendar-alt"></i></div>
+                                <div class="count">8+</div>
+                                <div class="count-title">Years</div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Academics">
+            <div class="academics">
+                <div class="section-title"> - Academics Programs - </div>
+                <p class="section-description">Comprehensive education tailored to each stage of your child's development</p>
+                <div class="academics-text-container">
+                    <div data-aos="fade-left" class="academics-text">
+                        <div class="fa-container"><i class="fas fa-puzzle-piece"></i></div>
+                        <div class="div-title">Nursery</div>
+                        <p>A nurturing environment for our youngest learners. Focus on early childhood development through play-based learning and social interaction.</p>
+                        <div><a href="enrollment.html">Enroll now <i class="fa fa-arrow-right"></i></a></div>
+                    </div>
+                    <div data-aos="fade-right" class="academics-text red">
+                        <div class="fa-container red"><i class="fas fa-book-open"></i></div>
+                        <div class="div-title">Primary</div>
+                        <p>Building strong foundations in core subjects. Comprehensive curriculum covering Mathematics, English, Science, and Social Studies.</p>
+                        <div><a href="enrollment.html">Enroll now <i class="fa fa-arrow-right"></i></a></div>
+                    </div>
+                    <div data-aos="fade-left" class="academics-text red">
+                        <div class="fa-container red"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="div-title">Junior Secondary</div>
+                        <p>Preparing students for higher education. Advanced coursework with focus on critical thinking and exam preparation.</p>
+                        <div><a href="enrollment.html">Enroll now <i class="fa fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+                <div class="more-btn"><a href="academics.html">Apply Now</a></div>
+            </div>
+        </section>
+
+        <section id="Gallery">
+            <div class="gallery">
+                <div class="section-title"> - School Gallery - </div>
+                <p class="section-description">Take a glimpse into life at Good Brains Daimond School</p>
+                <div class="img-container">
+                    <?php
+                        include 'assets/db/connect.php';
+
+                        $stmt = $conn -> prepare ("SELECT * FROM gallery ORDER BY id desc");
+                        $stmt -> execute();
+                        $result = $stmt->Get_Result();
+                        if ($result -> num_rows > 0) {
+                            while ($row = $result -> fetch_assoc()) {
+                                $img = $row["image"];
+                                $cat = $row["category"];
+
+                            echo '<div class="img">
+                                    <img src="assets/images/gallery/'.$img.'">
+                                        <div class="overlay">
+                                            <p>'.$cat.'</p>
+                                        </div>
+                                </div>';
+                            }
+                        }
+                    ?>
+
+                    <div class="img">
+                        <img src="assets/images/gallery/boy-rising-hand-class.jpg">
+                        <div class="overlay">
+                            <p>Childrens Day</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="assets/images/gallery/classmates-drawing.jpg">
+                        <div class="overlay">
+                            <p>Careerer Day</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="assets/images/gallery/doug-linstedt-jEEYZsaxbH4-unsplash.jpg">
+                        <div class="overlay">
+                            <p>Quiz Day</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="assets/images/gallery/girl-boy-having-fun-with-school-supplies.jpg">
+                        <div class="overlay">
+                            <p>Fruit Day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-btn"><a href="gallery.html">View More</a></div>
+            </div>
+        </section>
+
+        <section id="News">
+            <div class="news-background">
+                <div class="news">
+                    <div class="section-title"> - News & Events - </div>
+                    <p class="section-description">Stay updated with the letest happenings at our school</p>
+                    <div class="news-container">
+                        <?php
+
+                            $stmt = $conn ->prepare("SELECT * FROM event ORDER BY date desc");
+                            $stmt -> execute();
+                            $result = $stmt -> Get_result();
+                            if ($result -> num_rows > 0) {
+                                while ($row = $result -> fetch_assoc()) {
+                                    $cat = $row["category"];
+                                    $date = $row["event_date"];
+                                    $title = $row["type"];
+                                    $desc = $row["description"];
+                                    $time = $row["time"];
+
+                                echo '<div data-aos="fade-left" class="news-box">
+                                        <div class="news-head">
+                                            <div class="child">
+                                                <div class="category">'.$cat.'</div>
+                                            </div>
+                                            <div class="child">
+                                                <div class="date"><i class="fa fa-calendar-alt"></i> '.$date.'</div>
+                                            </div>                                
+                                        </div>
+                                        <h2>'.$title.'</h2>
+                                        <p>'.$desc.'</p>
+                                        <div>'.$time.'</div>
+                                    </div>';
+                                }
+                            }else {
+                                echo '<p>No news update';
+                            }
+                        ?>
+                        
+                        <div data-aos="fade-right" class="news-box">
+                            <div class="news-head">
+                                <div class="child">
+                                    <div class="category">Announcement</div>
+                                </div>
+                                <div class="child">
+                                    <div class="date "><i class="fa fa-calendar-alt"></i> Oct 5, 2025</div>
+                                </div>                                
+                            </div>
+                            <h2>Parent-Teacher Conference</h2>
+                            <p>Meet with teachers to discuss your child's progress and development. Appointments available throughout the day.</p>
+                            <div>04 : 30 pm</div>
+                        </div>
+                        <div data-aos="fade-left" class="news-box">
+                            <div class="news-head">
+                                <div class="child">
+                                    <div class="category">Event</div>
+                                </div>
+                                <div class="child">
+                                    <div class="date "><i class="fa fa-calendar-alt"></i> Oct 5, 2025</div>
+                                </div>                                
+                            </div>
+                            <h2>Cultural Day</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                    <!-- NEWSLETTER -->
+		            <div id="newsletter" class="section">
+			            <div class="container">
+				            <div class="newsletter">
+						        <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+						        <form>
+						            <input class="input" type="email" placeholder="Enter Your Email">
+						            <button class="newsletter-btn"><i class="far fa-envelope"></i> Subscribe</button>
+					            </form>
+						    </div>
+			            </div>
+		            </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="Reviews">
+            <div class="reviews">
+                <div class="section-title">Reviews</div>
+                <p class="section-description">What Parent and Students Say About Us</p>
+                
+                <div data-aos="fade-left" class="slider-wrapper">
+                    <button class="slider-btn prev"><i class="fa fa-angle-left"></i></button>
+                    
+                    <div class="reviews-container">
+                        <div class="review">
+                            <div class="team-name">Jemima O.</div>
+                            <div class="review-role">Student</div>
+                            <p>"this is the jds dj suu ueueyr owhue ohoa oedoawheo eouohowe oho uhehhoh uheo oweoyh oeo yaqogre qtooqayeoyo  ..."</p>
+                            <div class="review-date">September 9, 2025</div>
+                        </div>
+                        <div class="review">
+                            <div class="team-name">John D.</div>
+                            <div class="review-role">Teacher</div>
+                            <p>"Lorem ipsum dolor sit amet..."</p>
+                            <div class="review-date">September 10, 2025</div>
+                        </div>
+                        <div class="review">
+                            <div class="team-name">Fatimah K.</div>
+                            <div class="review-role">Designer</div>
+                            <p>"Creative and inspiring experience!"</p>
+                            <div class="review-date">September 11, 2025</div>
+                        </div>
+                        <div class="review">
+                            <div class="team-name">Michael B.</div>
+                            <div class="review-role">Developer</div>
+                            <p>"Very professional and helpful."</p>
+                            <div class="review-date">September 12, 2025</div>
+                        </div>
+                        <div class="review">
+                            <div class="team-name">Sarah J.</div>
+                            <div class="review-role">Student</div>
+                            <p>"Would highly recommend!"</p>
+                            <div class="review-date">September 13, 2025</div>
+                        </div>
+                    </div>
+                    <button class="slider-btn next"><i class="fa fa-angle-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact">
+            <div class="contact">
+                <div class="section-title">- Contact Us -</div>
+                <p class="section-description">Get in touch with us for admissions, inquiries, or to schedule a visit</p>
+                <div class="contact-container">
+                    <div class="contact-container-child">
+                        <div class="div-title">Get In Touch</div>
+                        <div>
+                            <div>
+                                <div class="contact-info">
+                                    <div class="fa-container"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div>
+                                        <strong>Our Location</strong>
+                                        <span>Madam Mercy Road, Opp. Big Mosque Dagiri Gwagwalada, F.C.T Abuja</span>
+                                    </div>
+                                </div>
+                                <div class="contact-info">
+                                    <div class="fa-container"><i class="fas fa-phone"></i></div>
+                                    <div>
+                                        <strong>Phone</strong>
+                                        <span><a href="tel:+234 08063320006">+234 08063320006</a></span>
+                                    </div>
+                                </div>
+                                <div class="contact-info">
+                                    <div class="fa-container"><i class="far fa-envelope"></i></div>
+                                    <div>
+                                        <strong>Email</strong>
+                                        <span><a href="mailto:goodbrainsdiamondschool@gmail.com">goodbrainsdiamondschool@gmail.com</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="school-hour">
+                                <div class="div-title">school hours</div>
+                                <p>Monday - Friday: 7:30 AM - 3:00 PM</p>
+                                <p>Saturday - Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-container-child">
+                        <div>
+                            <form data-aos="fade-left" action="https://formsubmit.co/goodbrainsdiamondschool@gmail.com" method="POST">
+                                <h2>Send Us a Message</h2>
+                                
+                                <input type="text" name="name" placeholder="Enter Name*">
+                                <input type="email" name="email" placeholder="Enter Email*">
+                                <textarea name="message" placeholder="Enter Your Message"></textarea>
+
+                                <input type="hidden" name="_next" value="http://localhost/thanks.html">
+
+                                <input type="submit" class="submit" value="send">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-container-child">
+                    <div class="div-title">Good Brains Diamond School</div>
+                    <p>Nurturing bright minds for a better tomorrow through quality education and holistic development.</p>
+                </div>
+                <div class="footer-container-child">
+                    <div class="div-title">Quik links</div>
+                    <p><a href="#About">About</a></p>
+                    <p><a href="#Academics">Academics</a></p>
+                    <p><a href="#Gallery">Gallery</a></p>
+                    <p><a href="#News">News</a></p>
+                    <p><a href="#Reviews">Reviews</a></p>
+
+                </div>
+                <div class="footer-container-child">
+                    <div class="div-title">Contact</div>
+                    <p>Madam Mercy Road, Opp. Big Mosque Dagiri Gwagwalada, F.C.T Abuja</p>
+                    <p><a href="tel:+234 08063320006">+234 08063320006</a></p>
+                    <p><a href="mailto:goodbrainsdiamondschool@gmail.com">goodbrainsdiamondschool@gmail.com</a></p>
+                </div>
+                <div class="footer-container-child">
+                    <div class="div-title">follow us</div>
+                    <div class="social-links">
+                        <div class="link-container"><a href=""><i class="fab fa-facebook"></i></a></div>
+                        <div class="link-container"><a href=""><i class="fab fa-instagram"></i></a></div>
+                        <div class="link-container"><a href=""><i class="fab fa-twitter"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights">
+                <div class="copyrights-child">
+                    <p><span id="footerDate"></span> Good Brains Diamond School | <span class="me">Designed and Developed by <a href="https://cachecoder.site" target="_blank">CacheCoder</a></span></p>
+                </div>
+                <div class="copyrights-child">
+                    <p class="right">All rights reserved</p>
+                </div>
+            </div>    
+        </footer>
+
+    </main>
+    
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration (ms)
+            offset: 120,   // trigger point
+            once: false,    // animate only once
+        });
+    </script>
+
+    <script>
+        window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        });
+    </script>
+
+    <script>
+        const container = document.querySelector('.reviews-container');
+        const reviews = document.querySelectorAll('.review');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        let index = 0;
+        let itemsPerView = window.innerWidth >= 768 ? 4 : 1;
+
+        function updateSlider() {
+            const slideWidth = reviews[0].offsetWidth + 20; // review width + gap
+            container.style.transform = `translateX(-${index * slideWidth}px)`;
+        }
+
+        // Next button
+        nextBtn.addEventListener('click', () => {
+            if (index < reviews.length - itemsPerView) {
+                index++;
+            } else {
+                index = 0; // loop back
+            }
+                updateSlider();
+        });
+
+        // Prev button
+        prevBtn.addEventListener('click', () => {
+            if (index > 0) {
+                index--;
+            } else {
+                index = reviews.length - itemsPerView; // loop to end
+            }
+            updateSlider();
+        });
+
+        // Update items per view on resize
+        window.addEventListener('resize', () => {
+            itemsPerView = window.innerWidth >= 768 ? 4 : 1;
+            index = 0;
+            updateSlider();
+        });
+    </script>
+
+    <script>
+        const startYear = 2024;
+        const currentYear = new Date().getFullYear();
+        const footerDateEl = document.getElementById("footerDate");
+
+        if (footerDateEl) {
+        footerDateEl.textContent =
+            `© ${startYear}` + (currentYear > startYear ? ` - ${currentYear}` : '');
+        }
+    </script>
+
+</body>
+</html>
