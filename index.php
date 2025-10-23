@@ -61,9 +61,8 @@
                         <li><div class="apply-btn"><a href="academics.html">Apply Now</a></div></li>
                     
                         <div class="social-links">
-                            <div class="link-container"><a href=""><i class="fab fa-facebook"></i></a></div>
-                            <div class="link-container"><a href=""><i class="fab fa-instagram"></i></a></div>
-                            <div class="link-container"><a href=""><i class="fab fa-twitter"></i></a></div>
+                            <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
+                            <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
                         </div>
                     </ul>
                 </div>
@@ -102,7 +101,7 @@
                         <div data-aos="fade-left" class="about-text">
                             <div class="fa-container"><i class="far fa-heart"></i></div>
                             <div class="div-title">Our Value</div>
-                            <p>Integrity, Excellence, Innovation, Respect, and Community - these core values guide everything we do.</p>
+                            <p>Integrity, Excellence, Discipline and Innovation. These values guide our teaching, learning and relationships, shaping students to become responsible and impactful members of society.</p>
                         </div>
                     </div>
                     <div class="more-btn"><a href="about.html">Learn More</a></div>
@@ -200,19 +199,6 @@
                             }
                         }
                     ?>
-
-                    <div class="img">
-                        <img src="assets/images/gallery/boy-rising-hand-class.jpg">
-                        <div class="overlay">
-                            <p>Childrens Day</p>
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img src="assets/images/gallery/classmates-drawing.jpg">
-                        <div class="overlay">
-                            <p>Careerer Day</p>
-                        </div>
-                    </div>
                     <div class="img">
                         <img src="assets/images/gallery/doug-linstedt-jEEYZsaxbH4-unsplash.jpg">
                         <div class="overlay">
@@ -281,18 +267,6 @@
                             <p>Meet with teachers to discuss your child's progress and development. Appointments available throughout the day.</p>
                             <div>04 : 30 pm</div>
                         </div>
-                        <div data-aos="fade-left" class="news-box">
-                            <div class="news-head">
-                                <div class="child">
-                                    <div class="category">Event</div>
-                                </div>
-                                <div class="child">
-                                    <div class="date "><i class="fa fa-calendar-alt"></i> Oct 5, 2025</div>
-                                </div>                                
-                            </div>
-                            <h2>Cultural Day</h2>
-                            <p></p>
-                        </div>
                     </div>
                     
                     <!-- NEWSLETTER -->
@@ -300,10 +274,21 @@
 			            <div class="container">
 				            <div class="newsletter">
 						        <p>Sign Up for the <strong>NEWSLETTER</strong></p>
-						        <form>
-						            <input class="input" type="email" placeholder="Enter Your Email">
+						        <form method="POST" action="https://api.web3forms.com/submit">
+                                    
+                                    <input type="hidden" name="access_key" value="31083e90-e6a1-4fb9-84d9-d21e4a99738d">
+                                    <!-- Honeypot Spam Protection -->
+                                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                                    <input type="hidden" name="subject" value="News Letter email">
+                                    <input type="hidden" name="message" value="Hello Good Brains Diamond School, this is my email keep me updated with the latest news">
+						            <input class="input" type="email" name="email" placeholder="Enter Your Email">
+
+                                    <input type="hidden" name="redirect" value="http://localhost/goodbrains/thanks.html">
+
 						            <button class="newsletter-btn"><i class="far fa-envelope"></i> Subscribe</button>
 					            </form>
+                                
 						    </div>
 			            </div>
 		            </div>
@@ -321,6 +306,26 @@
                     <button class="slider-btn prev"><i class="fa fa-angle-left"></i></button>
                     
                     <div class="reviews-container">
+                        <?php
+                            $stmt = $conn ->prepare("SELECT * FROM review ORDER BY id desc ");
+                            $stmt ->execute();
+                            $result = $stmt->get_result();
+                            if ($result -> num_rows >0) {
+                                while ($row = $result->fetch_assoc()) {
+                                    $r_name = $row["name"];
+                                    $r_role = $row["role"];
+                                    $review = $row["review"];
+                                    $r_date = $row["date"];
+
+                                echo '<div class="review">
+                                        <div class="team-name">' .$r_name. '</div>
+                                        <div class="review-role">' .$r_role. '</div>
+                                        <p>"' .$review. '"</p>
+                                        <div class="review-date">' .$r_date. '</div>
+                                    </div>';
+                                }
+                            }
+                        ?>
                         <div class="review">
                             <div class="team-name">Jemima O.</div>
                             <div class="review-role">Student</div>
@@ -354,6 +359,7 @@
                     </div>
                     <button class="slider-btn next"><i class="fa fa-angle-right"></i></button>
                 </div>
+                <div class="more-btn"><a href="review.html">Submit a review</a></div>
             </div>
         </section>
 
@@ -397,14 +403,20 @@
                     </div>
                     <div class="contact-container-child">
                         <div>
-                            <form data-aos="fade-left" action="https://formsubmit.co/goodbrainsdiamondschool@gmail.com" method="POST">
+                            <form data-aos="fade-left" action="https://api.web3forms.com/submit" method="POST">
+                                
+                                <input type="hidden" name="access_key" value="31083e90-e6a1-4fb9-84d9-d21e4a99738d">
+                                <!-- Honeypot Spam Protection -->
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                
                                 <h2>Send Us a Message</h2>
                                 
+                                <input type="hidden" name="subject" value="Contact Form Message">
                                 <input type="text" name="name" placeholder="Enter Name*">
                                 <input type="email" name="email" placeholder="Enter Email*">
                                 <textarea name="message" placeholder="Enter Your Message"></textarea>
 
-                                <input type="hidden" name="_next" value="http://localhost/thanks.html">
+                                <input type="hidden" name="redirect" value="http://localhost/goodbrains/thanks.html">
 
                                 <input type="submit" class="submit" value="send">
                             </form>

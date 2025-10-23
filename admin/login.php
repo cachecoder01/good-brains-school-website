@@ -28,8 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (password_verify($pass, $pass_hash) AND $email == $s_email) {
 
-        header("location: menu.html");
-        $_SESSION["name"] = $name;
+        header("location: menu.php");
+        $_SESSION["admin_logged_in"] = TRUE;
 
     }else {
 

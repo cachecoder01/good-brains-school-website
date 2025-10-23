@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["admin_logged_in"]) || $_SESSION["admin_logged_in"] !== TRUE) {
+        header("location: index.html");
+        exit();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +40,7 @@
         <section>
             <div class="menu_bar">
                 <h3 class="title">What do you want to do?</h3>
-                <div class="menu"><a href="add_gallery.html">Post new photos to gallery  <i class="fa fa-arrow-right"></i></a></div>
+                <div class="menu"><a href="gallery_form.php">Post new photos to gallery  <i class="fa fa-arrow-right"></i></a></div>
                 <div class="menu"><a href="event.html">Post Events/Annoucement  <i class="fa fa-arrow-right"></i></a></div>
             </div>
         </section>
