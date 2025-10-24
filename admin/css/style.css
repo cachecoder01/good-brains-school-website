@@ -89,6 +89,14 @@ input, select {
     outline: none;
     justify-content: center;
 }
+input.time {
+    width: 55%;
+    margin: 15px 10px 15px 20px;
+}
+select.am {
+    width: 25%;  
+    margin: 15px 20px 15px 10px;
+}
 select {
     width: 90%;
 }

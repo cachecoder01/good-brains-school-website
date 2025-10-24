@@ -44,13 +44,13 @@
                     <div class="nav-menu">
                         <ul>
                             <li><a href="index.php">Home</a></li>
-                            <li><a href="Academics.html">Academics</a></li>
-                            <li><a href="Gallery.html">Gallery</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="index.html#News">News</a></li>
                             <li><a href="review.html" class="active">Reviews</a></li>
                             <li><a href="#Contact">Contact</a></li>
                         </ul>
-                        <div class="apply-btn"><a href="">Apply Now</a></div>
+                        <div class="apply-btn"><a href="academics.html">Apply Now</a></div>
                     </div>
                 </div>
                 <div class="menu">
@@ -70,11 +70,10 @@
                         <li><a href="review.html" class="active">Reviews</a></li>
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
-                    <div class="apply-btn"><a href="">Apply Now</a></div>
+                    <div class="apply-btn"><a href="academics.html">Apply Now</a></div>
                     <div class="social-links">
-                        <div class="link-container"><a href=""><i class="fab fa-facebook"></i></a></div>
-                        <div class="link-container"><a href=""><i class="fab fa-instagram"></i></a></div>
-                        <div class="link-container"><a href=""><i class="fab fa-twitter"></i></a></div>
+                        <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
+                        <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
                     </div>
                 </div>
 
@@ -113,6 +112,26 @@
                     <button class="slider-btn prev"><i class="fa fa-angle-left"></i></button>
                     
                     <div class="reviews-container form-page">
+                        <?php
+                            $stmt = $conn ->prepare("SELECT * FROM review ORDER BY id desc ");
+                            $stmt ->execute();
+                            $result = $stmt->get_result();
+                            if ($result -> num_rows >0) {
+                                while ($row = $result->fetch_assoc()) {
+                                    $r_name = $row["name"];
+                                    $r_role = $row["role"];
+                                    $review = $row["review"];
+                                    $r_date = $row["date"];
+
+                                echo '<div class="review">
+                                        <div class="team-name">' .$r_name. '</div>
+                                        <div class="review-role">' .$r_role. '</div>
+                                        <p>"' .$review. '"</p>
+                                        <div class="review-date">' .$r_date. '</div>
+                                    </div>';
+                                }
+                            }
+                        ?>
                         <div class="review">
                             <div class="team-name">Jemima O.</div>
                             <div class="review-role">Student</div>

@@ -601,7 +601,7 @@ nav {
 .contact form h2 {
     text-align: center;
 }
-.contact input, textarea {
+.contact-container-child input, textarea {
     display: block;
     width: 80%;
     margin: 10px auto;
@@ -1027,7 +1027,7 @@ main {
     color: #0363ff;
 }
 
-.enrollment form {
+.enrollment {
     width: 40%;
     margin: 10px auto;
     justify-content: center;
@@ -1042,7 +1042,7 @@ main {
 }
 .enrollment input, select {
     display: block;
-    width: 95%;
+    width: 96%;
     padding: 10px;
     outline: none;
     border-radius: 8px;
@@ -1051,16 +1051,18 @@ main {
     margin: 10px auto;
 }
 .enrollment select {
-    width: 99%;
+    width: 100%;
 }
-.enrollment textarea {
+textarea.e-text{
     height: 100px;
+    width: 96%;
 }
 .enrollment .submit {
     background-color: #0363ff;
     border: thin solid #0363ff;
     color: white;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .form_message {

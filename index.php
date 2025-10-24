@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/icon" href="./assets/images/brand-images/brand-logo1.png" />
     <link rel="stylesheet" href="assets/css/aos.css" />
 
-    <title>Good Brains Diamond School | index</title>
+    <title>Good Brains Diamond School | Index</title>
 </head>
 <body>
     <header>
@@ -212,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="more-btn"><a href="gallery.html">View More</a></div>
+                <div class="more-btn"><a href="gallery.php">View More</a></div>
             </div>
         </section>
 
@@ -234,6 +234,7 @@
                                     $title = $row["type"];
                                     $desc = $row["description"];
                                     $time = $row["time"];
+                                    $am = $row["am"];
 
                                 echo '<div data-aos="fade-left" class="news-box">
                                         <div class="news-head">
@@ -246,7 +247,7 @@
                                         </div>
                                         <h2>'.$title.'</h2>
                                         <p>'.$desc.'</p>
-                                        <div>'.$time.'</div>
+                                        <div>'.$time.' '.$am.'</div>
                                     </div>';
                                 }
                             }else {
@@ -282,7 +283,7 @@
 
                                     <input type="hidden" name="subject" value="News Letter email">
                                     <input type="hidden" name="message" value="Hello Good Brains Diamond School, this is my email keep me updated with the latest news">
-						            <input class="input" type="email" name="email" placeholder="Enter Your Email">
+						            <input class="input" type="email" name="email" placeholder="Enter Your Email" required>
 
                                     <input type="hidden" name="redirect" value="http://localhost/goodbrains/thanks.html">
 
@@ -359,7 +360,7 @@
                     </div>
                     <button class="slider-btn next"><i class="fa fa-angle-right"></i></button>
                 </div>
-                <div class="more-btn"><a href="review.html">Submit a review</a></div>
+                <div class="more-btn"><a href="review_page.php">Submit a review</a></div>
             </div>
         </section>
 
@@ -390,7 +391,7 @@
                                     <div class="fa-container"><i class="far fa-envelope"></i></div>
                                     <div>
                                         <strong>Email</strong>
-                                        <span><a href="mailto:goodbrainsdiamondschool@gmail.com">goodbrainsdiamondschool@gmail.com</a></span>
+                                        <span><a href="mailto:goodbrainsdiamondschool@gmail.com">goodbrainsdiamondschool<span class="br">@gmail.com</span></a></span>
                                     </div>
                                 </div>
                             </div>
@@ -411,10 +412,10 @@
                                 
                                 <h2>Send Us a Message</h2>
                                 
-                                <input type="hidden" name="subject" value="Contact Form Message">
-                                <input type="text" name="name" placeholder="Enter Name*">
-                                <input type="email" name="email" placeholder="Enter Email*">
-                                <textarea name="message" placeholder="Enter Your Message"></textarea>
+                                <input type="hidden" name="subject" value="Contact Form Message" required>
+                                <input type="text" name="name" placeholder="Enter Name*" required>
+                                <input type="email" name="email" placeholder="Enter Email*" required>
+                                <textarea name="message" placeholder="Enter Your Message" required></textarea>
 
                                 <input type="hidden" name="redirect" value="http://localhost/goodbrains/thanks.html">
 
@@ -450,9 +451,8 @@
                 <div class="footer-container-child">
                     <div class="div-title">follow us</div>
                     <div class="social-links">
-                        <div class="link-container"><a href=""><i class="fab fa-facebook"></i></a></div>
-                        <div class="link-container"><a href=""><i class="fab fa-instagram"></i></a></div>
-                        <div class="link-container"><a href=""><i class="fab fa-twitter"></i></a></div>
+                        <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
+                        <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
                     </div>
                 </div>
             </div>
@@ -467,17 +467,6 @@
         </footer>
 
     </main>
-    
-    <script src="assets/js/script.js" defer></script>
-    <script src="assets/js/aos.js"></script>
-
-    <script>
-        AOS.init({
-            duration: 1000, // animation duration (ms)
-            offset: 120,   // trigger point
-            once: false,    // animate only once
-        });
-    </script>
 
     <script>
         window.addEventListener('scroll', () => {
@@ -489,46 +478,16 @@
         }
         });
     </script>
+    
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/review_slider.js" defer></script>
 
     <script>
-        const container = document.querySelector('.reviews-container');
-        const reviews = document.querySelectorAll('.review');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-
-        let index = 0;
-        let itemsPerView = window.innerWidth >= 768 ? 4 : 1;
-
-        function updateSlider() {
-            const slideWidth = reviews[0].offsetWidth + 20; // review width + gap
-            container.style.transform = `translateX(-${index * slideWidth}px)`;
-        }
-
-        // Next button
-        nextBtn.addEventListener('click', () => {
-            if (index < reviews.length - itemsPerView) {
-                index++;
-            } else {
-                index = 0; // loop back
-            }
-                updateSlider();
-        });
-
-        // Prev button
-        prevBtn.addEventListener('click', () => {
-            if (index > 0) {
-                index--;
-            } else {
-                index = reviews.length - itemsPerView; // loop to end
-            }
-            updateSlider();
-        });
-
-        // Update items per view on resize
-        window.addEventListener('resize', () => {
-            itemsPerView = window.innerWidth >= 768 ? 4 : 1;
-            index = 0;
-            updateSlider();
+        AOS.init({
+            duration: 1000, // animation duration (ms)
+            offset: 120,   // trigger point
+            once: false,    // animate only once
         });
     </script>
 

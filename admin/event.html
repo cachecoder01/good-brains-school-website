@@ -49,8 +49,14 @@
                         <option value="Social Day"></option>
                         <option value="Excursion Day"></option>
                     </datalist>
-                <input type="date" name="date" placeholder="" required>
-                <input type="time" name="time" placeholder="" required>
+                <input type="date" name="date" required>
+                <div style="display: flex;">
+                    <input type="time" name="time" class="time" required>
+                    <select input type="text" name="am" class="am">
+                        <option>Am</option>
+                        <option>Pm</option>
+                    </select>
+                </div>                
                 <textarea name="description" maxlength="255" placeholder="Enter a short description, character(255)" required></textarea>
                 <input type="submit" class="submit" value="POST">
             </form>

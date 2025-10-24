@@ -23,7 +23,7 @@
     <header>
         <div class="hero" style="background-color: #0a0f1f;">
             <nav>
-                <div class="back"><a href="menu.html"><i class="fa fa-angle-left"></i></a></div>
+                <div class="back"><a href="menu.php"><i class="fa fa-angle-left"></i></a></div>
                 <div class="brand-img">
                     <img src="../assets/images/brand-images/brand-logo1.png" width="80">
                 </div>

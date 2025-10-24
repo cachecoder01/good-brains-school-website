@@ -136,6 +136,9 @@
     .contact-info span {
         width: 200px;
     }
+    span .br {
+        display: block;
+    }
 
     .contact form {
         width: 90%;
@@ -158,24 +161,11 @@
         font-size: 25px;
     }
 
-    /*==== VIEW_DETAILS PAGE ====*/
-    .product {
-        flex-direction: column;
-        gap: 10px;
+    /*=== ENROLLMENT FORM ===*/
+    .enrollment {
+        width: 100%;
     }
 
-    /*=== SERVICE FORM PAGE ===*/
-    .header {
-        width: 90%;
-    }
-    .service-form {
-        flex-direction: column;
-        width: 80%;
-        margin: 50px auto;
-    }
-    .service-form-img {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 768px) { 
