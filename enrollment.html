@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/icon" href="./assets/images/brand-images/brand-logo1.png" />
     <link rel="stylesheet" href="assets/css/aos.css" />
 
-    <title>Good Brains Diamond School | School Gallery</title>
+    <title>Good Brains Diamond School | Application Form</title>
 
     <style>
         body {
@@ -43,14 +43,14 @@
                 <div class="nav-child">
                     <div class="nav-menu">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="Academics.html">Academics</a></li>
-                            <li><a href="Gallery.html">Gallery</a></li>
-                            <li><a href="index.html#News">News</a></li>
-                            <li><a href="index.html#Reviews">Reviews</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="gallery.php">Gallery</a></li>
+                            <li><a href="index.php#News">News</a></li>
+                            <li><a href="index.php#Reviews">Reviews</a></li>
                             <li><a href="#Contact">Contact</a></li>
                         </ul>
-                        <div class="apply-btn"><a href="">Apply Now</a></div>
+                        <div class="apply-btn"><a href="enrollment.html">Apply Now</a></div>
                     </div>
                 </div>
                 <div class="menu">
@@ -65,16 +65,15 @@
                     <ul>
                         <li><a href="about.html">About</a></li>
                         <li><a href="academics.html">Academics</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="index.html#News">News</a></li>
-                        <li><a href="index.html#Reviews">Reviews</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
+                        <li><a href="index.php#News">News</a></li>
+                        <li><a href="index.php#Reviews">Reviews</a></li>
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
-                    <div class="apply-btn"><a href="">Apply Now</a></div>
+                    <div class="apply-btn"><a href="enrollment.html">Apply Now</a></div>
                     <div class="social-links">
-                        <div class="link-container"><a href=""><i class="fab fa-facebook"></i></a></div>
-                        <div class="link-container"><a href=""><i class="fab fa-instagram"></i></a></div>
-                        <div class="link-container"><a href=""><i class="fab fa-twitter"></i></a></div>
+                        <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
+                        <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
                     </div>
                 </div>
 
@@ -94,31 +93,36 @@
 
         <section id="enrollment">
             <div class="enrollment">
-                <form>
+                <form method="POST" action="https://api.web3forms.com/submit">
+
+                    <input type="hidden" name="access_key" value="31083e90-e6a1-4fb9-84d9-d21e4a99738d">
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                     <label>Student Full Name</label>
-                    <input type="text" placeholder="Enter Student Full Name">
+                    <input type="text" name="Student_name" placeholder="Enter Student Full Name">
                     <label>Prefered School</label>
-                    <select input type="text" placeholder="Enter Parent/Guardiance Name">
+                    <select input type="text" name="school" placeholder="Enter Parent/Guardiance Name">
                         <option>Nursery School</option>
                         <option>Primary School</option>
                         <option>Junior Secondary School</option>
                     </select>
                     <label>Student Age</label>
-                    <input type="number" min="1" placeholder="Enter Student Age">
+                    <input type="number" min="1" name="age" placeholder="Enter Student Age">
                     <label>Parent/Guardiance Name</label>
-                    <input type="text" placeholder="Enter Parent/Guardiance Name">
+                    <input type="text" name="Gurdian_name" placeholder="Enter Parent/Guardiance Name">
                     <label>Email</label>
-                    <input type="email" placeholder="Enter Email">
+                    <input type="email" name="email" placeholder="Enter Email">
                     <label>Phone</label>
-                    <input type="tel" placeholder="Enter Phone Number">
+                    <input type="tel" name="phone" placeholder="Enter Phone Number">
                     <label>Location</label>
-                    <input type="text" placeholder="Enter Current Location">
+                    <input type="text" name="Location" placeholder="Enter Current Location">
                     <label>Current/Past School</label>
-                    <input type="text" placeholder="Enter Current/Past School">
+                    <input type="text" name="Past_school" placeholder="Enter Current/Past School">
                     <label>Valid Document Of Student</label>
-                    <input type="file" placeholder="Submit Any Valid Document of Student">
+                    <input type="file" name="Valid_document" placeholder="Submit Any Valid Document of Student">
                     <label>Message</label>
-                    <textarea placeholder="Write us some few words" class="e-text"></textarea>
+                    <textarea name="message" placeholder="Write us some few words" class="e-text"></textarea>
                     <input type="submit" class="submit" value="Submit">
                 </form>
             </div>
@@ -144,14 +148,14 @@
                                     <div class="fa-container"><i class="fas fa-phone"></i></div>
                                     <div>
                                         <strong>Phone</strong>
-                                        <span>+234 08063320006</span>
+                                        <span><a href="tel:+234 08063320006">+234 08063320006</a></span>
                                     </div>
                                 </div>
                                 <div class="contact-info">
                                     <div class="fa-container"><i class="far fa-envelope"></i></div>
                                     <div>
                                         <strong>Email</strong>
-                                        <span>goodbrains@gmail.com</span>
+                                        <span><a href="mailto:goodbrainsdiamondschool@gmail.com">goodbrainsdiamondschool<span class="br">@gmail.com</span></a></span>
                                     </div>
                                 </div>
                             </div>
@@ -164,11 +168,21 @@
                     </div>
                     <div class="contact-container-child">
                         <div>
-                            <form data-aos="fade-left">
+                            <form data-aos="fade-left" action="https://api.web3forms.com/submit" method="POST">
+                                
+                                <input type="hidden" name="access_key" value="31083e90-e6a1-4fb9-84d9-d21e4a99738d">
+                                <!-- Honeypot Spam Protection -->
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                
                                 <h2>Send Us a Message</h2>
-                                <input type="text" name="name" placeholder="Enter Name*">
-                                <input type="email" name="email" placeholder="Enter Email*">
-                                <textarea name="message" placeholder="Enter Your Message"></textarea>
+                                
+                                <input type="hidden" name="subject" value="Contact Form Message" required>
+                                <input type="text" name="name" placeholder="Enter Name*" required>
+                                <input type="email" name="email" placeholder="Enter Email*" required>
+                                <textarea name="message" placeholder="Enter Your Message" required></textarea>
+
+                                <input type="hidden" name="redirect" value="http://localhost/goodbrains/thanks.html">
+
                                 <input type="submit" class="submit" value="send">
                             </form>
                         </div>
@@ -187,23 +201,22 @@
                     <div class="div-title">Quik links</div>
                     <p><a href="about.html">About</a></p>
                     <p><a href="academics.html">Academics</a></p>
-                    <p><a href="gallery.html">Gallery</a></p>
-                    <p><a href="index.html#News">News</a></p>
-                    <p><a href="index.html#Reviews">Reviews</a></p>
+                    <p><a href="gallery.php">Gallery</a></p>
+                    <p><a href="index.php#News">News</a></p>
+                    <p><a href="index.php#Reviews">Reviews</a></p>
 
                 </div>
                 <div class="footer-container-child">
                     <div class="div-title">Contact</div>
                     <p>Madam Mercy Road, Opp. Big Mosque Dagiri Gwagwalada, F.C.T Abuja</p>
-                    <p>+234 08063320006</p>
-                    <p>goodbrains@gmail.com</p>
+                    <p><a href="tel:+234 08063320006">+234 08063320006</a></p>
+                    <p><a href="mailto:goodbrainsdiamondschool@gmail.com">goodbrainsdiamondschool@gmail.com</a></p>
                 </div>
                 <div class="footer-container-child">
                     <div class="div-title">follow us</div>
                     <div class="social-links">
-                        <div class="link-container"><a href=""><i class="fab fa-facebook"></i></a></div>
-                        <div class="link-container"><a href=""><i class="fab fa-instagram"></i></a></div>
-                        <div class="link-container"><a href=""><i class="fab fa-twitter"></i></a></div>
+                        <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
+                        <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
                     </div>
                 </div>
             </div>
