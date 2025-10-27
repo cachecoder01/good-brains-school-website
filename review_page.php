@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/icon" href="./assets/images/brand-images/brand-logo1.png" />
     <link rel="stylesheet" href="assets/css/aos.css" />
 
-    <title>Good Brains Diamond School | Review</title>
+    <title>Good Brains Diamond School | Reviews</title>
 
     <style>
         body {
@@ -272,6 +272,17 @@
         </footer>
 
     </main>
+
+    <script>
+        window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        });
+    </script>
     
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/aos.js"></script>
@@ -284,16 +295,7 @@
         });
     </script>
 
-    <script>
-        window.addEventListener('scroll', () => {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-        });
-    </script>
+    <script src="assets/js/review_slide.js" defer></script>
 
     <script>
         const startYear = 2024;

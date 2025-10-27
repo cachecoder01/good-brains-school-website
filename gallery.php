@@ -32,11 +32,11 @@
                 <div class="nav-child">
                     <div class="nav-menu">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="Academics.html">Academics</a></li>
-                            <li><a href="Gallery.html" class="active">Gallery</a></li>
-                            <li><a href="index.html#News">News</a></li>
-                            <li><a href="index.html#Reviews">Reviews</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="gallery.php" class="active">Gallery</a></li>
+                            <li><a href="index.php#News">News</a></li>
+                            <li><a href="index.php#Reviews">Reviews</a></li>
                             <li><a href="#Contact">Contact</a></li>
                         </ul>
                         <div class="apply-btn"><a href="academics.html">Apply Now</a></div>
@@ -55,15 +55,14 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="academics.html">Academics</a></li>
                         <li><a href="gallery.html" class="active">Gallery</a></li>
-                        <li><a href="index.html#News">News</a></li>
-                        <li><a href="index.html#Reviews">Reviews</a></li>
+                        <li><a href="index.php#News">News</a></li>
+                        <li><a href="index.php#Reviews">Reviews</a></li>
                         <li><a href="#Contact">Contact</a></li>
                         <li><div class="apply-btn"><a href="academics.html">Apply Now</a></div></li>
                     
                         <div class="social-links">
-                            <div class="link-container"><a href=""><i class="fab fa-facebook"></i></a></div>
-                            <div class="link-container"><a href=""><i class="fab fa-instagram"></i></a></div>
-                            <div class="link-container"><a href=""><i class="fab fa-twitter"></i></a></div>
+                            <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
+                            <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
                         </div>
                     </ul>
                 </div>
@@ -175,14 +174,14 @@
                                     <div class="fa-container"><i class="fas fa-phone"></i></div>
                                     <div>
                                         <strong>Phone</strong>
-                                        <span>+234 08063320006</span>
+                                        <span><a href="tel:+234 08063320006">+234 08063320006</a></span>
                                     </div>
                                 </div>
                                 <div class="contact-info">
                                     <div class="fa-container"><i class="far fa-envelope"></i></div>
                                     <div>
                                         <strong>Email</strong>
-                                        <span>goodbrains@gmail.com</span>
+                                        <span><a href="mailto:goodbrainsdiamondschool@gmail.com">goodbrainsdiamondschool<span class="br">@gmail.com</span></a></span>
                                     </div>
                                 </div>
                             </div>
@@ -195,11 +194,21 @@
                     </div>
                     <div class="contact-container-child">
                         <div>
-                            <form data-aos="fade-left">
+                            <form data-aos="fade-left" action="https://api.web3forms.com/submit" method="POST">
+                                
+                                <input type="hidden" name="access_key" value="31083e90-e6a1-4fb9-84d9-d21e4a99738d">
+                                <!-- Honeypot Spam Protection -->
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                
                                 <h2>Send Us a Message</h2>
-                                <input type="text" name="name" placeholder="Enter Name*">
-                                <input type="email" name="email" placeholder="Enter Email*">
-                                <textarea name="message" placeholder="Enter Your Message"></textarea>
+                                
+                                <input type="hidden" name="subject" value="Contact Form Message" required>
+                                <input type="text" name="name" placeholder="Enter Name*" required>
+                                <input type="email" name="email" placeholder="Enter Email*" required>
+                                <textarea name="message" placeholder="Enter Your Message" required></textarea>
+
+                                <input type="hidden" name="redirect" value="http://localhost/goodbrains/thanks.html">
+
                                 <input type="submit" class="submit" value="send">
                             </form>
                         </div>
@@ -218,23 +227,22 @@
                     <div class="div-title">Quik links</div>
                     <p><a href="about.html">About</a></p>
                     <p><a href="academics.html">Academics</a></p>
-                    <p><a href="gallery.html">Gallery</a></p>
-                    <p><a href="index.html#News">News</a></p>
-                    <p><a href="index.html#Reviews">Reviews</a></p>
+                    <p><a href="#Gallery">Gallery</a></p>
+                    <p><a href="index.php#News">News</a></p>
+                    <p><a href="index.php#Reviews">Reviews</a></p>
 
                 </div>
                 <div class="footer-container-child">
                     <div class="div-title">Contact</div>
                     <p>Madam Mercy Road, Opp. Big Mosque Dagiri Gwagwalada, F.C.T Abuja</p>
-                    <p>+234 08063320006</p>
-                    <p>goodbrains@gmail.com</p>
+                    <p><a href="tel:+234 08063320006">+234 08063320006</a></p>
+                    <p><a href="mailto:goodbrainsdiamondschool@gmail.com">goodbrainsdiamondschool@gmail.com</a></p>
                 </div>
                 <div class="footer-container-child">
                     <div class="div-title">follow us</div>
                     <div class="social-links">
-                        <div class="link-container"><a href=""><i class="fab fa-facebook"></i></a></div>
-                        <div class="link-container"><a href=""><i class="fab fa-instagram"></i></a></div>
-                        <div class="link-container"><a href=""><i class="fab fa-twitter"></i></a></div>
+                        <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
+                        <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
                     </div>
                 </div>
             </div>
@@ -254,14 +262,6 @@
     <script src="assets/js/aos.js"></script>
 
     <script>
-        AOS.init({
-            duration: 800, // animation duration (ms)
-            offset: 120,   // trigger point
-            once: true,    // animate only once
-        });
-    </script>
-
-    <script>
         window.addEventListener('scroll', () => {
         const navbar = document.getElementById('navbar');
         if (window.scrollY > 50) {
@@ -273,36 +273,14 @@
     </script>
 
     <script>
-let currentIndex = 0;
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const galleryImages = document.querySelectorAll(".gallery img");
+        AOS.init({
+            duration: 800, // animation duration (ms)
+            offset: 120,   // trigger point
+            once: true,    // animate only once
+        });
+    </script>
 
-galleryImages.forEach((img, index) => {
-  img.addEventListener("click", () => {
-    currentIndex = index;
-    openLightbox();
-  });
-});
-
-function openLightbox() {
-  lightbox.style.display = "flex";
-  lightboxImg.src = galleryImages[currentIndex].src;
-}
-
-function closeLightbox() {
-  lightbox.style.display = "none";
-}
-
-function changeImage(step) {
-  currentIndex += step;
-  if (currentIndex < 0) currentIndex = galleryImages.length - 1;
-  if (currentIndex >= galleryImages.length) currentIndex = 0;
-  lightboxImg.src = galleryImages[currentIndex].src;
-}
-
-</script>
-
+    <script src="assets/js/light_box.js" defer></script>
 
     <script>
         const startYear = 2024;

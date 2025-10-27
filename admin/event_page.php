@@ -1,3 +1,11 @@
+<?php
+session_start();
+    if (!isset($_SESSION["admin_logged_in"]) || $_SESSION["admin_logged_in"] !== TRUE) {
+        header("location: index.html");
+        exit();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +13,10 @@
     <!-- Mobile Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href=".css/mobile.css">
     <link rel="stylesheet" href="../assets/fonts/css/all.min.css" />
     <link rel="shortcut icon" type="image/icon" href="../assets/images/brand-images/brand-logo1.png" />
-    <link rel="stylesheet" href="./css/style.css">
 
     <title>Good Brains Diamond School | Admin</title>
 </head>

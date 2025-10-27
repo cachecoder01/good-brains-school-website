@@ -70,10 +70,6 @@ nav {
     text-decoration: none;
 }
 
-.login-form {
-    width: 30%;
-    margin: 200px auto;
-}
 form {
     margin: auto;
     background-color: white;
@@ -88,6 +84,16 @@ input, select {
     margin: 15px 20px;
     outline: none;
     justify-content: center;
+}
+textarea {
+    background-color: #eee;
+    border: thin solid #eee;
+    padding: 10px;
+    width: 85%;
+    margin: 15px 20px;
+    outline: none;
+    justify-content: center;
+    height: 100px;
 }
 input.time {
     width: 55%;
@@ -107,6 +113,14 @@ input.submit {
     width: 90%;
     color: white;
 }
+
+/*=== Login ===*/
+.login-form {
+    width: 30%;
+    margin: 200px auto;
+}
+
+/*=== Menu ===*/
 .menu_bar {
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -132,47 +146,18 @@ input.submit {
     width: 30%;
     margin: 80px auto;
 }
-.team-form textarea {
-    background-color: #eee;
-    border: thin solid #eee;
-    padding: 10px;
-    width: 85%;
-    margin: 15px 20px;
-    outline: none;
-    justify-content: center;
-    height: 100px;
-}
 
 /* Product */
 .poet-form {
     width: 40%;
     margin: 80px auto;
 }
-.poet-form textarea {
-    background-color: #eee;
-    border: thin solid #eee;
-    padding: 10px;
-    width: 90%;
-    margin: 15px;
-    outline: none;
-    justify-content: center;
-    height: 200px;
-}
 .poet-form input {
-    background-color: #eee;
-    border: thin solid #eee;
-    padding: 10px;
     width: 90%;
     margin: 15px;
-    outline: none;
-    justify-content: center;
 }
 .poet-form input.submit {
-    background-color: rgb(220, 11, 11);
-    border: thin solid rgb(220, 11, 11);
-    text-transform: uppercase;
     width: 94%;
-    color: white;
 }
 
 .form_message {
@@ -183,69 +168,4 @@ input.submit {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: 200px auto;
-}
-
-@media only screen and (max-width: 700px) {
-    .brand-img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    }
-    .brand-img img {
-        width: 50px;
-    }
-    .brand-name h2 {
-        font-size: large;
-    }
-    .brand-name span {
-        padding-left: 2px;
-        font-size: small;
-    }
-    .back {
-        padding: 12px 5px;
-        margin: 5px 0;
-    }
-    .back i {
-        font-size: 35px;
-    }
-    .logout {
-        top: 20px;
-        right: 10px;
-        padding: 5px;
-        width: 80px;
-    }
-
-    .login-form {
-        width: 85%;
-    }
-    input {
-        width: 80%;
-    }
-    input.submit {
-        width: 86%;
-    }
-    .menu_bar {
-        width: 70%;
-    }
-    .team-form {
-        width: 80%;
-    }
-    .team-form textarea {
-        width: 80%;
-        margin: 15px 20px;
-        outline: none;
-    }
-    .poet-form {
-        width: 90%;
-    }
-    .poet-form textarea {
-        width: 85%;
-    }
-    .poet-form input {
-        width: 85%;
-    }
-    .poet-form input.submit {
-        width: 92%;
-    }
 }

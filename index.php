@@ -52,12 +52,12 @@
 
                 <div id="side-menu" class="side-menu">
                     <ul>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Academics">Academics</a></li>
-                        <li><a href="#Gallery">Gallery</a></li>
-                        <li><a href="#News">News</a></li>
-                        <li><a href="#Reviews">Reviews</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
+                        <li><a href="index.php#News">News</a></li>
+                        <li><a href="index.php#Reviews">Reviews</a></li>
+                        <li><a href="index.php#Contact">Contact</a></li>
                         <li><div class="apply-btn"><a href="academics.html">Apply Now</a></div></li>
                     
                         <div class="social-links">
@@ -481,7 +481,7 @@
     
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/aos.js"></script>
-    <script src="assets/js/review_slider.js" defer></script>
+    <script src="assets/js/review_slide.js" defer></script>
 
     <script>
         AOS.init({

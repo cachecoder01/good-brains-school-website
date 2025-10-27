@@ -13,9 +13,10 @@
     <!-- Mobile Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href=".css/mobile.css">
     <link rel="stylesheet" href="../assets/fonts/css/all.min.css" />
     <link rel="shortcut icon" type="image/icon" href="../assets/images/brand-images/brand-logo1.png" />
-    <link rel="stylesheet" href="./css/style.css">
 
     <title>Good Brains Diamond School | Admin</title>
 </head>
@@ -47,9 +48,10 @@
 
             $check = getimagesize($_FILES['img']['tmp_name']);
 
-            $allowedType = ['image/jpeg', 'image/png', 'image/webp'];
+            $allowedType = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'];
             if (!in_array($check['mime'], $allowedType)) {
                 die('File Format Not Allowed');
+                exit();
             }
 
             if ($check) {

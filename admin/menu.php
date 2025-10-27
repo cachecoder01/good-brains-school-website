@@ -13,9 +13,10 @@
     <!-- Mobile Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" href="../assets/fonts/css/all.min.css" />
-    <link rel="shortcut icon" type="image/icon" href="../assets/images/brand-images/brand-logo1.png" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href=".css/mobile.css">
+    <link rel="stylesheet" href="../assets/fonts/css/all.min.css" />
+    <link rel="shortcut icon" type="image/icon" href="../assets/images/brand-images/brand-logo1.png" />    
 
     <title>Good Brains Diamond School | Admin</title>
 </head>
@@ -41,7 +42,7 @@
             <div class="menu_bar">
                 <h3 class="title">What do you want to do?</h3>
                 <div class="menu"><a href="gallery_form.php">Post new photos to gallery  <i class="fa fa-arrow-right"></i></a></div>
-                <div class="menu"><a href="event.html">Post Events/Annoucement  <i class="fa fa-arrow-right"></i></a></div>
+                <div class="menu"><a href="event_page.php">Post Events/Annoucement  <i class="fa fa-arrow-right"></i></a></div>
             </div>
         </section>
     </main>
