@@ -153,6 +153,22 @@
         padding: 0;
     }
 
+    /*==== ABOUT PAGE ====*/
+    .about-content-child img {
+        width: 300px;
+    }
+    .history-child img {
+        width: 300px;
+    }
+    .anthem-container {
+        flex-direction: column;
+    }
+
+    /*==== ACADEMICS PAGE ====*/
+    .curriculum-container {
+        flex-direction: column;
+    }
+
     /*==== PORTFOLIO PAGE ====*/
     .portfolio .hero {
         height: 80px;

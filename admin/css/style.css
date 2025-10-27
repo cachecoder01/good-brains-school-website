@@ -16,14 +16,6 @@ html {
 p {
     color: #777676;
 }
-input:focus {
-    border: thin solid rgb(220, 11, 11);
-    box-shadow: 0px 2px 4px rgb(220, 11, 11);
-}
-textarea:focus {
-    border: thin solid rgb(220, 11, 11);
-    box-shadow: 0px 2px 4px rgb(220, 11, 11);
-}
 
 /*==== header ====*/
 header {
@@ -44,6 +36,7 @@ nav {
 }
 .brand-name h2 {
     padding: 10px 2px;
+    position: relative;
 }
 
 .back {
@@ -70,54 +63,56 @@ nav {
     text-decoration: none;
 }
 
+/*=== FORM ===*/
 form {
     margin: auto;
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    width: 90%;
+    overflow: hidden;
 }
 input, select {
     background-color: #eee;
     border: thin solid #eee;
     padding: 10px;
-    width: 85%;
-    margin: 15px 20px;
+    width: 100%;
+    margin: 15px auto;
     outline: none;
     justify-content: center;
+
 }
 textarea {
     background-color: #eee;
     border: thin solid #eee;
     padding: 10px;
-    width: 85%;
-    margin: 15px 20px;
+    width: 100%;
+    margin: 15px auto;
     outline: none;
     justify-content: center;
     height: 100px;
-}
-input.time {
-    width: 55%;
-    margin: 15px 10px 15px 20px;
-}
-select.am {
-    width: 25%;  
-    margin: 15px 20px 15px 10px;
-}
-select {
-    width: 90%;
 }
 input.submit {
     background-color: rgb(220, 11, 11);
     border: thin solid rgb(220, 11, 11);
     text-transform: uppercase;
-    width: 90%;
+    width: 100%;
     color: white;
+}
+input:focus {
+    border: thin solid rgb(220, 11, 11);
+    border-color: rgb(220, 11, 11) transparent;
+    box-shadow: 0px 2px 4px rgb(220, 11, 11);
+}
+textarea:focus {
+    border: thin solid rgb(220, 11, 11);
+    box-shadow: 0px 2px 4px rgb(220, 11, 11);
 }
 
 /*=== Login ===*/
-.login-form {
-    width: 30%;
-    margin: 200px auto;
+.login-form {    
+    background-color: white;
+    width: 350px;
+    margin: 150px auto;    
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /*=== Menu ===*/
@@ -127,7 +122,7 @@ input.submit {
     padding: 10px;
     border-radius: 10px;
     margin: 150px auto;
-    width: 30%;
+    width: 330px;
 }
 .menu_bar .title {
     text-align: center;
@@ -141,18 +136,41 @@ input.submit {
     font-size: 18px;
 }
 
-/* Team */
-.team-form {
-    width: 30%;
-    margin: 80px auto;
+/*=== Team ==*/
+.event-form {
+    background-color: white;
+    width: 350px;
+    margin: 80px auto;    
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.event-form input {
+    width: 96%;
+}
+.event-form select {
+    width: 100%;
+}
+input.time {
+    width: 60%;
+    margin: 15px auto;
+}
+select.am {
+    width: 30%;  
+    margin: 15px auto;
+}
+.event-form input.submit {
+    width: 100%;
 }
 
-/* Product */
-.poet-form {
-    width: 40%;
-    margin: 80px auto;
+/*=== Gallery ===*/
+.gallery-form {
+    background-color: white;
+    width: 350px;
+    margin: 150px auto;    
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-.poet-form input {
+.g-form input {
     width: 90%;
     margin: 15px;
 }

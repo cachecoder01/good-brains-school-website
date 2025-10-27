@@ -1,70 +1,36 @@
 @media only screen and (max-width: 700px) {
     .brand-img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+        height: 50px;
+        margin: 15px 5px;
     }
     .brand-img img {
         width: 50px;
     }
     .brand-name h2 {
-        font-size: large;
-    }
-    .brand-name span {
-        padding-left: 2px;
-        font-size: small;
+        font-size: 16px;
+        width: 180px;
+        line-height: 1.1;
+        text-align: center;
+        padding: 5px 0;
+        margin: 15px auto;
     }
     .back {
         padding: 12px 5px;
-        margin: 5px 0;
+        margin: 10px 0;
     }
     .back i {
-        font-size: 35px;
+        font-size: 30px;
     }
     .logout {
         top: 20px;
         right: 10px;
         padding: 5px;
-        width: 80px;
-    }
-
-    .login-form {
-        width: 85%;
-    }
-    input {
-        width: 80%;
-    }
-    input.submit {
-        width: 86%;
-    }
-    .menu_bar {
-        width: 70%;
-    }
-    .team-form {
-        width: 80%;
-    }
-    .team-form textarea {
-        width: 80%;
-        margin: 15px 20px;
-        outline: none;
-    }
-    .poet-form {
-        width: 90%;
-    }
-    .poet-form textarea {
-        width: 85%;
-    }
-    .poet-form input {
-        width: 85%;
-    }
-    .poet-form input.submit {
-        width: 92%;
+        width: 70px;
     }
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (width: 1030px) {
     .login-form {
-        width: 85%;
+        width: 4050px;
     }
 }

@@ -274,10 +274,17 @@
     <script src="assets/js/aos.js"></script>
 
     <script>
-        AOS.init({
-            duration: 800, // animation duration (ms)
-            offset: 120,   // trigger point
-            once: true,    // animate only once
+        document.addEventListener('DOMContentLoaded', function() {
+        if (window.innerWidth < 768) {
+            document.querySelectorAll('[data-aos]').forEach(el => {
+                el.removeAttribute('data-aos');
+            });
+        } else {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        }
         });
     </script>
 

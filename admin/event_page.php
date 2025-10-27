@@ -14,7 +14,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href=".css/mobile.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="../assets/fonts/css/all.min.css" />
     <link rel="shortcut icon" type="image/icon" href="../assets/images/brand-images/brand-logo1.png" />
 
@@ -39,7 +39,7 @@ session_start();
     </header>
 
     <main>
-        <div class="team-form">
+        <div class="event-form">
             <form method="POST" action="event.php">
                 <select input type="text" name="category">
                     <option>-- Select Category</option>
@@ -59,7 +59,7 @@ session_start();
                         <option value="Excursion Day"></option>
                     </datalist>
                 <input type="date" name="date" required>
-                <div style="display: flex;">
+                <div style="display: flex;width: 100%;">
                     <input type="time" name="time" class="time" required>
                     <select input type="text" name="am" class="am">
                         <option>Am</option>

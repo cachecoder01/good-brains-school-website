@@ -484,13 +484,20 @@
     <script src="assets/js/review_slide.js" defer></script>
 
     <script>
-        AOS.init({
-            duration: 1000, // animation duration (ms)
-            offset: 120,   // trigger point
-            once: false,    // animate only once
+        document.addEventListener('DOMContentLoaded', function() {
+        if (window.innerWidth < 768) {
+            document.querySelectorAll('[data-aos]').forEach(el => {
+                el.removeAttribute('data-aos');
+            });
+        } else {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        }
         });
     </script>
-
+    
     <script>
         const startYear = 2024;
         const currentYear = new Date().getFullYear();

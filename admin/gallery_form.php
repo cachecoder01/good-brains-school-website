@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href=".css/mobile.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="../assets/fonts/css/all.min.css" />
     <link rel="shortcut icon" type="image/icon" href="../assets/images/brand-images/brand-logo1.png" />
 
@@ -39,7 +39,7 @@
     </header>
     
     <main>
-        <div class="poet-form">
+        <div class="gallery-form">
             <form method="POST" action="add_gallery.php" enctype="multipart/form-data">
                 <input type="text" name="category" list="category" placeholder="Enter Event Category" required>
                     <datalist id="category">
