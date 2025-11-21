@@ -38,17 +38,17 @@
     <section id="side-bar">
 		<div class="side-bar">
             <ul>
+                <li><a href="application_list.php"><i class="fa fa-caret-right"></i> Application List</a></li>
                 <li><a href="gallery_form.php"><i class="fa fa-caret-right"></i> Gallery</a></li>
     		    <li><a href="event_page.php"><i class="fa fa-caret-right"></i> Events/Annoucement</a></li>
-                <li><a href="event_page.php"><i class="fa fa-caret-right"></i> Application List</a></li>
             </ul>
 		</div>
 
         <div class="menu_bar">
             <h3 class="title">What do you want to do?</h3>
+            <div class="menu"><a href="application_list.php">Application List <i class="fa fa-arrow-right"></i></a></div>
             <div class="menu"><a href="gallery_form.php">Post new photos to gallery  <i class="fa fa-arrow-right"></i></a></div>
             <div class="menu"><a href="event_page.php">Post Events/Annoucement  <i class="fa fa-arrow-right"></i></a></div>
-            <div class="menu"><a href="event_page.php">Application List <i class="fa fa-arrow-right"></i></a></div>            
         </div>
 	</section>
 

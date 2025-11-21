@@ -79,7 +79,7 @@ nav {
 	padding: 15px 25px;
 	border-radius: 10px;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 100px auto;
+    margin: 150px auto;
 }
 .form-container h2 {
     text-align: center;
@@ -106,7 +106,7 @@ textarea {
     border: thin solid #eee;
     padding: 10px;
     width: 100%;
-    margin: 15px auto;
+    margin: auto;
     outline: none;
     justify-content: center;
     height: 100px;
@@ -183,6 +183,16 @@ textarea:focus {
 .white-container h2 {
     text-align: center;
 }
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.child {
+    flex: 1;
+    gap: 10px;
+    text-align: center;
+}
 
 /*___ Menu Page ___*/
 .menu-page {
@@ -217,11 +227,6 @@ textarea:focus {
     border: thin solid #eee;
     border-radius: 10px;
 }
-.child {
-    flex: 1;
-    gap: 10px;
-    text-align: center;
-}
 .gallery-form-container .img-container {
     border-radius: 10px;
     height: 150px;
@@ -239,16 +244,11 @@ textarea:focus {
     margin: 0;
     padding: 15px;
 }
-.gallery table, tr {
-    width: 100%;
-}
-.gallery td {
-    width: 20%;
-}
 .gallery-list {
     display: flex;
     border-radius: 10px;
     border: thin solid #eee;
+    margin: 10px 20px;
 }
 .gallery-list:hover {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -267,9 +267,8 @@ textarea:focus {
     border-radius: 5px;
     margin: 0 20px;
 }
-.gallery-list-child span {
-    display: block;
-    color: #908a8a;
+.event-name {
+    font-size: 20px;
 }
 .gallery-list-child .delete {
     background-color: rgb(220, 11, 11);
@@ -282,29 +281,115 @@ textarea:focus {
 }
 
 /*=== Team ==*/
-.event-form {
-    background-color: white;
-    width: 350px;
-    margin: 80px auto;    
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+.event .form-container {
+    margin: 0;
+    box-shadow: none;
 }
-.event-form input {
-    width: 96%;
-}
-.event-form select {
-    width: 100%;
+.event-container {
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    border: thin solid #eee;
+    gap: 10px;
 }
 input.time {
-    width: 60%;
-    margin: 15px auto;
+    width: 65%;
+    margin: auto;
 }
 select.am {
-    width: 30%;  
-    margin: 15px auto;
+    width: 35%;  
+    margin: auto;
 }
-.event-form input.submit {
-    width: 100%;
+.news-container {
+    width: 90%;
+    display: flex;
+    gap: 15px;
+    margin: auto;
+}
+.news-box {
+    background-color: white;
+    border-radius: 8px;
+    border: thin solid #b5b3b3;
+    padding: 20px;
+    width: 300px;
+    margin: 30px auto;
+    position: relative;
+}
+.news-head {
+    display: flex;
+    width: 99%;
+    margin: auto;
+}
+.news-head .child {
+    flex: 1;
+}
+.news-box .category {
+    background-color: rgb(220, 11, 11);
+    border-radius: 12px;
+    color: #fff;
+    font-size: small;
+    text-align: center;
+    width: 100px;
+}
+.date {
+    text-align: right;
+    color: #777676;
+}
+.news-box h2 {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.news-container .delete {
+    background-color: rgb(220, 11, 11);
+    padding: 5px;
+    color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+/*==== Application Page ====*/
+.application .gallery-list-child img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+}
+.application-container {
+    border: thin solid #eee;
+    border-radius: 5px;
+    width: 85%;
+    margin: auto;
+    padding: 15px;
+}
+.application-container .border {
+    border: thin solid #eee;
+    margin: 10px;
+}
+.application-container img {
+    width: 200px;
+}
+.application-container p {
+    margin: 0;
+}
+.application-container span {
+    color: #0a0f1f;
+}
+.btn-container {
+    width: 200px;
+    margin: 30px auto;
+    border: thin solid;
+}
+.btn {
+    background-color: rgb(220, 11, 11);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: auto;
 }
 
 .form_message {

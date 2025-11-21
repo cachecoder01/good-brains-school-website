@@ -43,11 +43,8 @@
         $desc = trim($_POST["description"]);
         $desc = htmlspecialchars(strip_tags($desc), ENT_QUOTES, 'UTF-8');
 
-        echo $time;
-        exit();
-
         $stmt = $conn -> prepare("INSERT INTO event(category, type, event_date, time, am, description)VALUE(?, ?, ?, ?, ?, ?)");
-        $stmt -> bind_param("sssss", $cat, $type, $date, $time, $am, $desc);
+        $stmt -> bind_param("ssssss", $cat, $type, $date, $time, $am, $desc);
 
         $result = $stmt -> execute();
         if ($result) {

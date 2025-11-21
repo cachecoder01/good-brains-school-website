@@ -224,7 +224,7 @@
                     <div class="news-container">
                         <?php
 
-                            $stmt = $conn ->prepare("SELECT * FROM event ORDER BY date desc");
+                            $stmt = $conn ->prepare("SELECT * FROM event ORDER BY date desc limit 3");
                             $stmt -> execute();
                             $result = $stmt -> Get_result();
                             if ($result -> num_rows > 0) {
@@ -254,20 +254,6 @@
                                 echo '<p>No news update';
                             }
                         ?>
-                        
-                        <div data-aos="fade-right" class="news-box">
-                            <div class="news-head">
-                                <div class="child">
-                                    <div class="category">Announcement</div>
-                                </div>
-                                <div class="child">
-                                    <div class="date "><i class="fa fa-calendar-alt"></i> Oct 5, 2025</div>
-                                </div>                                
-                            </div>
-                            <h2>Parent-Teacher Conference</h2>
-                            <p>Meet with teachers to discuss your child's progress and development. Appointments available throughout the day.</p>
-                            <div>04 : 30 pm</div>
-                        </div>
                     </div>
                     
                     <!-- NEWSLETTER -->

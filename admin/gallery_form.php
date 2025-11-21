@@ -39,14 +39,14 @@
     <section id="side-bar">
 		<div class="side-bar">
             <ul>
+                <li><a href="application_list.php"><i class="fa fa-caret-right"></i> Application List</a></li>
                 <li><a href="gallery_form.php" class="active"><i class="fa fa-caret-down"></i> Gallery</a></li>
     		    <li><a href="event_page.php"><i class="fa fa-caret-right"></i> Events/Annoucement</a></li>
-                <li><a href="event_page.php"><i class="fa fa-caret-right"></i> Application List</a></li>
             </ul>
 		</div>
 	</section>
     
-    <main>        
+    <main>
         <section class="content-container">
             <div class="page-name">
                 <h2>Gallery</h2>
@@ -88,14 +88,30 @@
 
             <div class="white-container gallery">
                 <h2>Gallery Posts</h2>
-                <div class="gallery-list">
-                    <div class="gallery-list-child "><h1>#GP1</h1></div>
-                    <div class="gallery-list-child child"><img src="../assets/images/gallery/view-diverse-adolescents-practicing-health-wellness-activities-themselves-their-community.jpg"></div>
-                    <div class="gallery-list-child child"><div class="event">Sport Day</div></div>
-                    <div class="gallery-list-child child">2025-10-25</div>
-                    <div class="gallery-list-child child"><div class="delete">Delete</div></div>
-                </div>
-                
+                <?php
+                    include '../assets/db/connect.php';
+
+                        $stmt = $conn -> prepare ("SELECT * FROM gallery ORDER BY id desc");
+                        $stmt -> execute();
+                        $result = $stmt->Get_Result();
+                        if ($result -> num_rows > 0) {
+                            while ($row = $result -> fetch_assoc()) {
+                                $id = $row["id"];
+                                $img = $row["image"];
+                                $cat = $row["category"];
+                                $date = $row["date"];
+
+                        echo '<div class="gallery-list">
+                                <div class="gallery-list-child "><h1>#GP'.$id.'</h1></div>
+                                <div class="gallery-list-child child"><img src="../assets/images/gallery/'.$img.'"></div>
+                                <div class="gallery-list-child child"><div class="event-name">'.$cat.'</div></div>
+                                <div class="gallery-list-child child">'.$date.'</div>';?>
+                                <div class="gallery-list-child child"><a href="delete_gallery.php?id=<?= $id ?>" onclick="return confirm('Are you sure you want to Delete Photo GP<?= $id ?>?')" class="delete">Delete</a></div>
+                            <?php
+                            echo '</div>';
+                        }
+                    }
+                ?>
             </div>
         </section>
     </main>
