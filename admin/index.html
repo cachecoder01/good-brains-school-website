@@ -15,25 +15,32 @@
 </head>
 <body>
     <header>
-        <div class="hero" style="background-color: #0a0f1f;">
-            <nav>
-                <div class="brand-img">
-                    <img src="../assets/images/brand-images/brand-logo1.png" width="80">
-                </div>
-                <div class="brand-name">
-                    <h2>Good Brains Diamond School</h2>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <div class="brand-img">
+                <img src="../assets/images/brand-images/brand-logo1.png" width="80">
+            </div>
+            <div class="brand-name">
+                <h2>Good Brains Diamond School</h2>
+            </div>
+        </nav>
     </header>
 
     <main>
         <section>
-            <div class="login-form">
+            <div class="form-container">
+                <h2>Login</h2>
                 <form method="POST" action="login.php">
-                    <input type="email" name="email" placeholder="Enter ID">
-                    <input type="password" name="pass" placeholder="Enter Password">
-                    <input type="submit" class="submit" value="Login">
+                    <div class="form-group">
+                        <label>Enter School UID</label>
+                        <input type="email" name="email" placeholder="Enter ID">
+                    </div>
+                    <div class="form-group">
+                        <label>Enter School Password</label>
+                        <input type="password" name="pass" placeholder="Enter Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="submit" value="Login">
+                    </div>
                 </form>
             </div>
         </section>

@@ -23,7 +23,6 @@
 <body>
 <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        session_start();
 
         include '../assets/db/connect.php';
 
@@ -57,7 +56,7 @@
             if ($check) {
                 if (move_uploaded_file($_FILES['img']['tmp_name'], $targetFile)) {
                     $imgPath = (string) $targetFile;
-                    $imp = $imgName;
+                    $img = $imgName;
                 }
             }else {
                 echo 'Upload error:'. $_FILES['img']['error'];
@@ -76,7 +75,7 @@
         if ($result) {
             echo "<div class='form_message'>
                     <div>Photo Posted</div>
-                    <div><a href='add_gallery.html'>OK</a></div>
+                    <div><a href='gallery_form.php'>OK</a></div>
                 </div>";
         }else {
             echo "Unable to insert";

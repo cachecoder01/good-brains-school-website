@@ -154,6 +154,9 @@
     }
 
     /*==== ABOUT PAGE ====*/
+    .about-page .hero {
+        height: 70px;
+    }
     .about-content-child img {
         width: 300px;
     }
@@ -165,8 +168,37 @@
     }
 
     /*==== ACADEMICS PAGE ====*/
+    .curriculum {
+        width: 95%;
+    }
     .curriculum-container {
         flex-direction: column;
+    }
+    .curriculum-container .desktop {
+        display: none;
+    }
+    .curriculum-container .mobile {
+        display: block;
+    }
+    .age {
+        border-radius: 25px;
+        background-color: #cadaf5;
+        margin: 5px auto;
+    }
+    .subjects {
+        width: 100%;
+    }
+    .subject {
+        width: 45%;
+    }
+    .process-container {
+        flex-direction: column;
+    }
+    .requirement {
+        width: 85%;
+    }
+    .requirement summary {
+        right: 20px;
     }
 
     /*==== PORTFOLIO PAGE ====*/
@@ -262,6 +294,26 @@
     /*=== Contact ===*/
     .contact .submit {
         width: 88%;
+    }
+
+    /*==== ACADEMICS PAGE ====*/
+     .requirement {
+        width: 85%;
+    }
+    .requirement summary {
+        right: 30px;
+    }
+    summary.junior {
+        right: 30px;
+    }
+
+    /*==== ENROLLMENT PAGE ====*/
+    .enrollment {
+        width: 75%;
+        padding: 10px;
+    }
+    .enrollment label {
+        padding: 5px;
     }
 }
 

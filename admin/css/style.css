@@ -12,6 +12,9 @@ body {
 html {
     scroll-behavior: smooth;
 }
+* {
+	box-sizing: border-box;
+}
 
 p {
     color: #777676;
@@ -26,6 +29,11 @@ nav {
     display: flex;
     color: white;
     position: relative;
+    background-color: #0a0f1f;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 .brand-img {
     justify-content: center;
@@ -64,20 +72,34 @@ nav {
 }
 
 /*=== FORM ===*/
-form {
-    margin: auto;
-    width: 90%;
-    overflow: hidden;
+.form-container {
+	background-color: #fff;
+	width: 100%;
+	max-width: 400px;
+	padding: 15px 25px;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 100px auto;
+}
+.form-container h2 {
+    text-align: center;
+}
+.form-group {
+	margin: 10px auto;
+}
+label {
+	display: block;
+	font-weight: bold;
+	color: #374151;
+    margin-bottom: 5px;
 }
 input, select {
     background-color: #eee;
     border: thin solid #eee;
     padding: 10px;
     width: 100%;
-    margin: 15px auto;
     outline: none;
-    justify-content: center;
-
+    border-radius: 5px;
 }
 textarea {
     background-color: #eee;
@@ -95,6 +117,7 @@ input.submit {
     text-transform: uppercase;
     width: 100%;
     color: white;
+    margin: 10px auto;
 }
 input:focus {
     border: thin solid rgb(220, 11, 11);
@@ -106,34 +129,156 @@ textarea:focus {
     box-shadow: 0px 2px 4px rgb(220, 11, 11);
 }
 
-/*=== Login ===*/
-.login-form {    
-    background-color: white;
-    width: 350px;
-    margin: 150px auto;    
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+/*=== Menu ===*/
+.menu-bar {
+    display: none;
 }
 
-/*=== Menu ===*/
-.menu_bar {
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border-radius: 10px;
-    margin: 150px auto;
-    width: 330px;
+.side-bar {
+	background-color: white;
+	height: 100%;
+	width: 20%;
+	display: block;
+	margin: 0;
+	left: 0;
+	top: 0;
+	position: fixed;
+	padding-top: 200px;
 }
-.menu_bar .title {
+.side-bar ul {
+	list-style-type: none;
+}
+.side-bar li {
+    margin: 20px auto;
+}
+.side-bar a {
+	color: #908a8a;
+    text-decoration: none;
+    font-size: larger;
+}
+.side-bar a:hover {
+    color: black;
+}
+.side-bar a.active {
+	color: black;
+}
+
+/*___ Content ___*/
+.content-container {
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 100px;
+    padding: 20px;
+}
+.page-name {
+	margin: 5px 0;
+}
+.white-container {
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px;
+}
+.white-container h2 {
     text-align: center;
 }
-.menu {
-    border-top: thin solid #777676;
+
+/*___ Menu Page ___*/
+.menu-page {
+    width: 80%;
+    margin-left: 20%;
+    border-radius: 10px;
     padding: 10px;
 }
-.menu a {
-    color: rgb(220, 11, 11);
-    font-size: 18px;
+.menu-page img {
+    display: flex;
+    width: 250px;
+    margin: auto;
+    opacity: 0.6;
+}
+.menu-page h2 {
+    text-align: center;
+    font-size: 50px;
+    bottom: 0px;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 85%;
+    margin: auto;
+    color: #908a8a;
+}
+
+/*=== Gallery ===*/
+.gallery-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    border: thin solid #eee;
+    border-radius: 10px;
+}
+.child {
+    flex: 1;
+    gap: 10px;
+    text-align: center;
+}
+.gallery-form-container .img-container {
+    border-radius: 10px;
+    height: 150px;
+    background: #eee;
+    margin: 25px 20px;
+}
+.img-container img {   
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+}
+.gallery-form-container .form-container {
+    box-shadow: none;
+    margin: 0;
+    padding: 15px;
+}
+.gallery table, tr {
+    width: 100%;
+}
+.gallery td {
+    width: 20%;
+}
+.gallery-list {
+    display: flex;
+    border-radius: 10px;
+    border: thin solid #eee;
+}
+.gallery-list:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.gallery-list-child {
+    padding: 10px;
+    border-right: thin solid #eee;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.gallery-list-child img {
+    width: 150px;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+.gallery-list-child span {
+    display: block;
+    color: #908a8a;
+}
+.gallery-list-child .delete {
+    background-color: rgb(220, 11, 11);
+    padding: 10px;
+    color: white;
+    width: 100px;
+    margin: 15px auto;
+    text-align: center;
+    border-radius: 5px;
 }
 
 /*=== Team ==*/
@@ -160,22 +305,6 @@ select.am {
 }
 .event-form input.submit {
     width: 100%;
-}
-
-/*=== Gallery ===*/
-.gallery-form {
-    background-color: white;
-    width: 350px;
-    margin: 150px auto;    
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-.g-form input {
-    width: 90%;
-    margin: 15px;
-}
-.poet-form input.submit {
-    width: 94%;
 }
 
 .form_message {

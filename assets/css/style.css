@@ -701,7 +701,7 @@ span a {
     justify-content: center;
     background: white;
     background-size:cover;
-    height: 70px;
+    height: 90px;
     width: 100%;
     overflow: hidden;
     margin-top: 0;
@@ -873,25 +873,30 @@ main {
 .curriculum .div-title {
     text-align: center;
 }
-.curriculum-container {
+.curriculum-content {
     background-color: #fff;
+    margin: 20px auto;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+.curriculum-container {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    padding: 20px;
-    margin: 20px auto;
 }
 .curriculum-container .child {
     flex: 1;
 }
 .curriculum-container .child img {
     width: 100%;
-    margin: 50px auto;
+}
+.curriculum-container .mobile {
+    display: none;
 }
 .curriculum .head {
     display: flex;
-    
 }
 .curriculum .div-title {
     color: #0363ff;
@@ -1014,6 +1019,7 @@ main {
 }
 .requirement .div-title {
     color: #0363ff;
+    width: 80%;
 }
 .requirement-container .child {
     flex: 1;
@@ -1023,10 +1029,15 @@ main {
     font-size: 30px;
     position: absolute;
     top: 15px;
-    right: 250px;
+    right: 60px;
+}
+summary p {
+    font-size: small;
+    display: inline;
+    cursor: pointer;
 }
 summary.junior {
-    right: 150px;
+    right: 40px;
 }
 .requirement-container table {
     width: 95%;
@@ -1039,6 +1050,7 @@ summary.junior {
     color: #0363ff;
 }
 
+/*==== ENROLLMENT PAGE ====*/
 .enrollment {
     width: 40%;
     margin: 10px auto;
@@ -1046,7 +1058,7 @@ summary.junior {
     border: thin solid #cadaf5;
     border-radius: 8px;
     padding-bottom: 20px;
-    padding: 50px;
+    padding: 20px;
     background-color: white;
 }
 .enrollment label {
@@ -1054,7 +1066,7 @@ summary.junior {
 }
 .enrollment input, select {
     display: block;
-    width: 96%;
+    width: 90%;
     padding: 10px;
     outline: none;
     border-radius: 8px;
@@ -1063,11 +1075,11 @@ summary.junior {
     margin: 10px auto;
 }
 .enrollment select {
-    width: 100%;
+    width: 95%;
 }
 textarea.e-text{
     height: 100px;
-    width: 96%;
+    width: 90%;
 }
 .enrollment .submit {
     background-color: #0363ff;
