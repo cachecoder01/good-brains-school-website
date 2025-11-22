@@ -19,6 +19,9 @@ html {
 p {
     color: #777676;
 }
+.center {
+    text-align: center;
+}
 
 /*==== header ====*/
 header {
@@ -191,7 +194,6 @@ textarea:focus {
 .child {
     flex: 1;
     gap: 10px;
-    text-align: center;
 }
 
 /*___ Menu Page ___*/
@@ -379,17 +381,21 @@ select.am {
     color: #0a0f1f;
 }
 .btn-container {
-    width: 200px;
+    display: flex;
     margin: 30px auto;
-    border: thin solid;
+    gap: 20px;
+    justify-content: center;
 }
-.btn {
+.dl-btn {
     background-color: rgb(220, 11, 11);
-    border-radius: 5px;
-    text-align: center;
-    color: white;
     padding: 10px;
-    margin: auto;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+.dl-btn a {
+    color: white;
+    text-decoration: none;
 }
 
 .form_message {

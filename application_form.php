@@ -36,7 +36,7 @@
             $school = htmlspecialchars(strip_tags($school), ENT_QUOTES, 'UTF-8');
 
             $age = trim($_POST['age']);
-            $age = htmlspecialchars(strip_tags($age), ENT_QUOTES, 'UTF-8');
+            $age = filter_var(strip_tags($age), FILTER_VALIDATE_INT);
 
             $guardian_name = trim($_POST['gurdian_name']);
             $guardian_name = htmlspecialchars(strip_tags($guardian_name), ENT_QUOTES, 'UTF-8');
@@ -52,6 +52,9 @@
 
             $past_school = trim($_POST['past_school']);
             $past_school = htmlspecialchars(strip_tags($past_school), ENT_QUOTES, 'UTF-8');
+
+            $past_class = trim($_POST['past_class']);
+            $past_class = htmlspecialchars(strip_tags($past_class), ENT_QUOTES, 'UTF-8');
 
             $message = trim($_POST['message']);
             $message = htmlspecialchars(strip_tags($message), ENT_QUOTES, 'UTF-8');
@@ -97,9 +100,8 @@
                 exit();
             };
 
-            $stmt = $conn -> prepare("INSERT INTO application_form(student_name, school, student_age, guardian_name, email, phone, location, past_school, passport, message)VALUE(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-            $stmt -> bind_param("ssississss", $name, $school, $age, $guardian_name, $email, $phone, $location, $school, $img, $message);
-            $stmt -> execute();
+            $stmt = $conn -> prepare("INSERT INTO application_form(student_name, school, student_age, guardian_name, email, phone, location, past_school, past_class, passport, message)VALUE(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            $stmt -> bind_param("ssississsss", $name, $school, $age, $guardian_name, $email, $phone, $location, $past_school, $past_class, $img, $message);
 
             $result = $stmt ->execute();
             if ($result) {
@@ -122,6 +124,7 @@ $data = [
     "Phone" => $phone,
     "Location" => $location,
     "Past School" => $past_school,
+    "Past Class" => $past_class,
     "Message" => $message,
     "Passport" => "Passport uploaded. View it in the admin dashboard: goodbrains/admin/application_form.php"
 ];

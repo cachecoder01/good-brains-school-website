@@ -69,6 +69,7 @@
                                 $name = $row["student_name"];
                                 $school = $row["school"];
                                 $past_school = $row["past_school"];
+                                $past_class = $row["past_class"];
                                 $age = $row["student_age"];
                                 $g_name = $row["guardian_name"];
                                 $email = $row["email"];
@@ -81,12 +82,12 @@
                 ?>
                 <div class="application-container">
                     <div class="flex">
-                        <div class="child"><img src="../assets/images/application-form/passport/<?= $img ?>"></div>
+                        <div class="child center"><img src="../assets/images/application-form/passport/<?= $img ?>"></div>
                         <div class="flex child">
                             <p>Name: <span><?= $name ?></span></p>
                             <p>School Applied For: <span><?= $school ?></span></p>
                             <p>Current/Past School: <span><?= $past_school ?></span></p>
-                            <p>Current/Past Class: <span></span></p>
+                            <p>Current/Past Class: <span><?= $past_class ?></span></p>
                             <p>Studet Age: <span><?= $age ?></span></p>
                             <p>Guardian Name: <span><?= $g_name ?></span></p>
                             <p>Email: <span><?= $email ?></span></p>
@@ -103,19 +104,22 @@
                                     <th>S/NO</th><th>Subjects Title</th>
                                 </tr>
                                 <tr>
-                                    <td>1</td><td>English Language</td>
+                                    <td class="center">1</td><td>English Language</td>
                                 </tr>
                                 <tr>
-                                    <td>2</td><td>English Language</td>
+                                    <td class="center">2</td><td>English Language</td>
                                 </tr>
                                 <tr>
-                                    <td>1</td><td>English Language</td>
+                                    <td class="center">3</td><td>English Language</td>
                                 </tr>
                                 <tr>
-                                    <td>1</td><td>English Language</td>
+                                    <td class="center">4</td><td>English Language</td>
                                 </tr>
                                 <tr>
-                                    <td>1</td><td>English Language</td>
+                                    <td class="center">5</td><td>English Language</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">6</td><td>English Language</td>
                                 </tr>
                             </table>
                             <table class="child border">
@@ -123,44 +127,34 @@
                                     <th>S/NO</th><th>Subjects Title</th>
                                 </tr>
                                 <tr>
-                                    <td>1</td><td>English Language</td>
+                                    <td class="center">7</td><td>English Language</td>
                                 </tr>
                                 <tr>
-                                    <td>2</td><td>English Language</td>
+                                    <td class="center">8</td><td>English Language</td>
                                 </tr>
                                 <tr>
-                                    <td>1</td><td>English Language</td>
+                                    <td class="center">9</td><td>English Language</td>
                                 </tr>
                                 <tr>
-                                    <td>1</td><td>English Language</td>
+                                    <td class="center">10</td><td>English Language</td>
                                 </tr>
                                 <tr>
-                                    <td>1</td><td>English Language</td>
+                                    <td class="center">11</td><td>English Language</td>
                                 </tr>
                             </table>
                         </div>
                     </div>
                     <div class="border">
                         <h2>Student Message</h2>
-                        <p><?= $message ?></p>
+                        <p class="center"><?= $message ?></p>
                     </div>
                 </div>
                 <div class="btn-container">
-                    <a download class="btn child">Download</a>
-                    <a download class="btn child">Print</a>
-                </div>                
+                    <div class="dl-btn"><a href="#" >Download</a></div>
+                    <div class="dl-btn"><a href="#" >Print</a></div>
+                </div>
             </div>
         </section>
     </main>
-    
-    <script>
-        const image = document.querySelector("#preview"),
-        input = document.querySelector("input");
-
-        input = addEventListener("change", () => {
-            image.style.display = "block";
-            image.src = URL.createObjectURL(input.files[0]);
-        });
-    </script>
 </body>
 </html>
