@@ -104,14 +104,12 @@
         font-size: small;
     }
     .cta-button-about {
-        height: 30px;
         padding: 2px 5px;
+        border-radius: 5px;
     }
     .cta-button-services {
-        height: 30px;
         padding: 2px 5px;
-        text-align: center;
-        top: -10px;
+        border-radius: 5px;
     }
     .cta-button-services a {
         color: #0740d0;
@@ -127,11 +125,17 @@
         font-size: 18px;
         width: 90%;
     }
+    .form-container {
+        max-width: 300px;
+    }
 
     /*=== Contact ===*/
     .contact {
-        width: 80%;
+        width: 95%;
         margin: 0 auto;
+    }
+    .contact-container {
+        width: 100%;
     }
     .contact-info span {
         width: 200px;
@@ -140,9 +144,6 @@
         display: block;
     }
 
-    .contact form {
-        width: 90%;
-    }
     .copyrights {
         flex-direction: column;
         text-align: center;
@@ -158,10 +159,12 @@
         height: 70px;
     }
     .about-content-child img {
-        width: 300px;
+        width: 270px;
+        display: flex;
+        margin: auto;
     }
     .history-child img {
-        width: 300px;
+        width: 270px;
     }
     .anthem-container {
         flex-direction: column;
@@ -207,11 +210,6 @@
     }
     .category-name {
         font-size: 25px;
-    }
-
-    /*=== ENROLLMENT FORM ===*/
-    .enrollment {
-        width: 100%;
     }
 
 }
@@ -291,11 +289,6 @@
         width: 350px;
     }
 
-    /*=== Contact ===*/
-    .contact .submit {
-        width: 88%;
-    }
-
     /*==== ACADEMICS PAGE ====*/
      .requirement {
         width: 85%;
@@ -306,15 +299,6 @@
     summary.junior {
         right: 30px;
     }
-
-    /*==== ENROLLMENT PAGE ====*/
-    .enrollment {
-        width: 75%;
-        padding: 10px;
-    }
-    .enrollment label {
-        padding: 5px;
-    }
 }
 
 .side-menu ul a {
@@ -322,7 +306,7 @@
     color: white;
 }
 .side-menu ul li {
-    padding: 10px;
+    padding: 10px 0;
     list-style-type: none;
 }
 .side-menu .social-links li {

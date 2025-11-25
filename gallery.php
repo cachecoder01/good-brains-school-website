@@ -39,7 +39,7 @@
                             <li><a href="index.php#Reviews">Reviews</a></li>
                             <li><a href="#Contact">Contact</a></li>
                         </ul>
-                        <div class="apply-btn"><a href="academics.html">Apply Now</a></div>
+                        <div class="apply-btn"><a href="enrollment.html">Apply Now</a></div>
                     </div>
                 </div>
                 <div class="menu">
@@ -58,13 +58,13 @@
                         <li><a href="index.php#News">News</a></li>
                         <li><a href="index.php#Reviews">Reviews</a></li>
                         <li><a href="#Contact">Contact</a></li>
-                        <li><div class="apply-btn"><a href="academics.html">Apply Now</a></div></li>
-                    
-                        <div class="social-links">
-                            <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
-                            <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
-                        </div>
                     </ul>
+                    <div class="apply-btn"><a href="enrollment.html">Apply Now</a></div>
+
+                    <div class="social-links">
+                        <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
+                        <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
+                    </div>
                 </div>
 
             </nav>
@@ -83,66 +83,37 @@
 
         <section id="Gallery">
             <div class="gallery-page">
-                <div class="gallery">
-                    <div class="category-name">- Inter-House sports Day -</div>
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="assets/images/gallery/view-diverse-adolescents-practicing-health-wellness-activities-themselves-their-community.jpg">
-                        </div>
-                        <div class="img">
-                            <img src="assets/images/gallery/football-trainer-teaching-his-pupils.jpg">
-                        </div>
-                        <div class="img">
-                            <img src="assets/images/gallery/medium-shot-kids-playing-with-ball.jpg">
-                        </div>
-                        <div class="img">
-                            <img src="assets/images/gallery/view-children-practicing-health-wellness-activity.jpg">
-                        </div>
-                    </div>
-                </div>
+                <div >
+                    <?php
+                        include './assets/db/connect.php';
+                        $stmt = $conn -> prepare("SELECT DISTINCT category FROM gallery ORDER BY category asc");
+                        $stmt -> execute();
+                        $result = $stmt -> Get_Result();
+                        if ($result -> num_rows > 0) {
+                            while ($row = $result -> fetch_assoc()) {
+                                $event = $row["category"];
 
-                <div class="gallery">
-                    <div class="category-name">- Career Day -</div>
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="assets/images/gallery/girl-disinfecting-classroom.jpg">
-                        </div>
-                        <div class="img">
-                            <img src="assets/images/gallery/happy-girl-hardhat-holding-book-commercial-vehicle-toy.jpg">
-                        </div>
-                        <div class="img">
-                            <img src="assets/images/gallery/little-girl-wearing-orange-helmet-studio-shot.jpg">
-                        </div>
-                        <div class="img">
-                            <img src="assets/images/gallery/view-children-practicing-health-wellness-activity.jpg">
-                        </div>
-                    </div>
+                            echo '<div class="gallery">
+                            <div class="category-name"> - '.$event.' -</div>';
+                            echo '<div class="img-container">';
+                            $stmt2 = $conn -> prepare("SELECT * FROM gallery WHERE category=?");
+                            $stmt2 -> bind_param("s", $event);
+                            $stmt2 -> execute();
+                            $result2 = $stmt2 -> Get_Result();
+                            if ($result2 -> num_rows > 0) {
+                                while ($row = $result2 -> fetch_assoc()) {
+                                    $img = $row["image"];
+                                    echo '<div class="img">
+                                            <img src="assets/images/gallery/'.$img.'">
+                                        </div>';
+                                }
+                            }
+                            echo '</div>';
+                            echo '</div>';
+                            }
+                        }
+                    ?>
                 </div>
-
-                <div class="gallery">
-                    <div class="category-name">- Social Day -</div>
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="assets/images/gallery/boy-rising-hand-class.jpg">
-                        </div>
-                        <div class="img">
-                            <img src="assets/images/gallery/classmates-drawing.jpg">
-                        </div>
-                        <div class="img">
-                            <img src="assets/images/gallery/doug-linstedt-jEEYZsaxbH4-unsplash.jpg">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery">
-                    <div class="category-name">- Fruit Day -</div>
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="assets/images/gallery/girl-boy-having-fun-with-school-supplies.jpg">
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
 
@@ -193,7 +164,7 @@
                         </div>
                     </div>
                     <div class="contact-container-child">
-                        <div>
+                        <div class="form-container">
                             <form data-aos="fade-left" action="https://api.web3forms.com/submit" method="POST">
                                 
                                 <input type="hidden" name="access_key" value="31083e90-e6a1-4fb9-84d9-d21e4a99738d">
@@ -273,10 +244,17 @@
     </script>
 
     <script>
-        AOS.init({
-            duration: 800, // animation duration (ms)
-            offset: 120,   // trigger point
-            once: true,    // animate only once
+        document.addEventListener('DOMContentLoaded', function() {
+        if (window.innerWidth < 768) {
+            document.querySelectorAll('[data-aos]').forEach(el => {
+                el.removeAttribute('data-aos');
+            });
+        } else {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        }
         });
     </script>
 

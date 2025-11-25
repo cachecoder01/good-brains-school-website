@@ -39,7 +39,7 @@
                             <li><a href="#Reviews">Reviews</a></li>
                             <li><a href="#Contact">Contact</a></li>
                         </ul>
-                        <div class="apply-btn"><a href="academics.html">Apply Now</a></div>
+                        <div class="apply-btn"><a href="enrollment.html">Apply Now</a></div>
                     </div>
                 </div>
                 <div class="menu">
@@ -58,12 +58,13 @@
                         <li><a href="index.php#News">News</a></li>
                         <li><a href="index.php#Reviews">Reviews</a></li>
                         <li><a href="index.php#Contact">Contact</a></li>
-                        <li><div class="apply-btn"><a href="academics.html">Apply Now</a></div></li>
-                    
-                        <div class="social-links">
-                            <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
-                            <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
-                        </div>
+                    </ul>
+                    <div class="apply-btn"><a href="enrollment.html">Apply Now</a></div>
+
+                    <div class="social-links">
+                        <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
+                        <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
+                    </div>
                     </ul>
                 </div>
 
@@ -389,7 +390,7 @@
                         </div>
                     </div>
                     <div class="contact-container-child">
-                        <div>
+                        <div class="form-container">
                             <form data-aos="fade-left" action="https://api.web3forms.com/submit" method="POST">
                                 
                                 <input type="hidden" name="access_key" value="31083e90-e6a1-4fb9-84d9-d21e4a99738d">

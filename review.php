@@ -40,7 +40,7 @@
 
             echo "<div class='form_message'>
                     <div>Review Submited</div>
-                    <div><a href='review.html'>OK</a></div>
+                    <div><a href='review_page.php'>OK</a></div>
                 </div>";
         }else {
             die("Unable to submit");

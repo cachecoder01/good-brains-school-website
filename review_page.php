@@ -50,7 +50,7 @@
                             <li><a href="review_page.php" class="active">Reviews</a></li>
                             <li><a href="#Contact">Contact</a></li>
                         </ul>
-                        <div class="apply-btn"><a href="academics.html">Apply Now</a></div>
+                        <div class="apply-btn"><a href="enrollment.html">Apply Now</a></div>
                     </div>
                 </div>
                 <div class="menu">
@@ -70,7 +70,7 @@
                         <li><a href="review_page.php" class="active">Reviews</a></li>
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
-                    <div class="apply-btn"><a href="academics.html">Apply Now</a></div>
+                    <div class="apply-btn"><a href="enrollment.html">Apply Now</a></div>
                     <div class="social-links">
                         <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
                         <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
@@ -91,7 +91,7 @@
         </section>
 
         <section id="enrollment">
-            <div class="enrollment">
+            <div class="form-container">
                 <form method="POST" action="review.php">
                     <input type="text" name="name" placeholder="Your Name">
                     <input type="email" name="email" placeholder="Your Email">
@@ -207,7 +207,7 @@
                         </div>
                     </div>
                     <div class="contact-container-child">
-                        <div>
+                        <div class="form-container">
                             <form data-aos="fade-left" action="https://api.web3forms.com/submit" method="POST">
                                 
                                 <input type="hidden" name="access_key" value="31083e90-e6a1-4fb9-84d9-d21e4a99738d">
@@ -288,10 +288,17 @@
     <script src="assets/js/aos.js"></script>
 
     <script>
-        AOS.init({
-            duration: 800, // animation duration (ms)
-            offset: 120,   // trigger point
-            once: true,    // animate only once
+        document.addEventListener('DOMContentLoaded', function() {
+        if (window.innerWidth < 768) {
+            document.querySelectorAll('[data-aos]').forEach(el => {
+                el.removeAttribute('data-aos');
+            });
+        } else {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        }
         });
     </script>
 

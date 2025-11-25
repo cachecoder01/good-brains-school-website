@@ -22,6 +22,9 @@ a {
 p {
     color: #777676;
 }
+*{
+    box-sizing: border-box;
+}
 
 /*==== header ====*/
 header {
@@ -594,37 +597,6 @@ span .br {
 .school-hour p {
     margin: 0;
 }
-.contact form {
-    width: 80%;
-    margin: 10px auto;
-    justify-content: center;
-    border: thin solid #cadaf5;
-    border-radius: 8px;
-    padding-bottom: 20px;
-}
-.contact form h2 {
-    text-align: center;
-}
-.contact-container-child input, textarea {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-    outline: none;
-    border-radius: 8px;
-    border: thin solid #cadaf5;
-    font-size: 16px;
-}
-.contact textarea {
-    height: 100px;
-}
-.contact .submit {
-    background-color: #0363ff;
-    width: 85%;
-    border: thin solid #0363ff;
-    color: white;
-    text-transform: uppercase;
-}
 
 /*=== Footer ===*/
 footer {
@@ -828,14 +800,16 @@ main {
     margin-bottom: 50px;
 }
 .gallery-page .gallery {
-    margin: 20px auto;
+    margin: 30px auto;
 }
 .category-name {
-    padding: 50px;
+    padding: 5px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 30px;
     letter-spacing: 3px;
     text-transform: capitalize;
+    border-bottom: thin solid #eee;
 }
 
 .lightbox {
@@ -863,7 +837,6 @@ main {
 .lightbox .close {top: 20px; right: 40px; }
 .lightbox .prev { left: 30px; top: 50%; }
 .lightbox .next { right: 30px; top: 50%; }
-
 
 /*==== ACADEMICS PAGE ====*/
 .curriculum {
@@ -1050,45 +1023,7 @@ summary.junior {
     color: #0363ff;
 }
 
-/*==== ENROLLMENT PAGE ====*/
-.enrollment {
-    width: 40%;
-    margin: 10px auto;
-    justify-content: center;
-    border: thin solid #cadaf5;
-    border-radius: 8px;
-    padding-bottom: 20px;
-    padding: 20px;
-    background-color: white;
-}
-.enrollment label {
-    color: #777676;
-}
-.enrollment input, select {
-    display: block;
-    width: 90%;
-    padding: 10px;
-    outline: none;
-    border-radius: 8px;
-    border: thin solid #cadaf5;
-    font-size: 16px;
-    margin: 10px auto;
-}
-.enrollment select {
-    width: 95%;
-}
-textarea.e-text{
-    height: 100px;
-    width: 90%;
-}
-.enrollment .submit {
-    background-color: #0363ff;
-    border: thin solid #0363ff;
-    color: white;
-    text-transform: uppercase;
-    width: 100%;
-}
-
+/*==== Form ====*/
 .form_message {
     width: 20%;
     padding: 20px;
@@ -1115,4 +1050,33 @@ textarea.e-text{
 
 .form-page .review {
     background-color: white;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05)
+}
+.form-container input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: thin solid #cadaf5;
+    border-radius: 5px;
+    outline: none;
+    margin: 5px auto;
+}
+textarea {
+    height: 100px;
+}
+label {
+    color: #777676;
+}
+.submit {
+    background-color: #0363ff;
+    color: white;
+    text-transform: uppercase;
 }

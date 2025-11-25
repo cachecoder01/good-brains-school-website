@@ -19,7 +19,7 @@
         }
         .contact {
             background-color: white;
-            padding: 20px 30px;
+            padding: 20px;
             margin: 50px auto;
         }
     </style>
@@ -71,6 +71,7 @@
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
                     <div class="apply-btn"><a href="enrollment.html">Apply Now</a></div>
+
                     <div class="social-links">
                         <div class="link-container"><a href="https://www.facebook.com/profile.php?id=61582771016980"><i class="fab fa-facebook"></i></a></div>
                         <div class="link-container"><a href="https://www.instagram.com/goodbrainsdiamondschool?igsh=MTQwODAyOHR1M2pmcw=="><i class="fab fa-instagram"></i></a></div>
@@ -92,7 +93,7 @@
         </section>
 
         <section id="enrollment">
-            <div class="enrollment">
+            <div class="form-container">
                 <form method="POST" action="application_form.php" enctype="multipart/form-data">
 
                     <input type="hidden" name="access_key" value="31083e90-e6a1-4fb9-84d9-d21e4a99738d">
@@ -128,7 +129,7 @@
                     <label>Valid Document Of Student</label>
                     <input type="file" name="img" placeholder="Submit Any Valid Document of Student">
                     <label>Message</label>
-                    <textarea name="message" placeholder="Write us some few words" class="e-text"></textarea>
+                    <textarea name="message" placeholder="Write us some few words" ></textarea>
                     
                     <input type="hidden" name="redirect" value="http://localhost/goodbrains/thanks.html">
 
@@ -176,7 +177,7 @@
                         </div>
                     </div>
                     <div class="contact-container-child">
-                        <div>
+                        <div class="form-container">
                             <form data-aos="fade-left" action="https://api.web3forms.com/submit" method="POST">
                                 
                                 <input type="hidden" name="access_key" value="31083e90-e6a1-4fb9-84d9-d21e4a99738d">
