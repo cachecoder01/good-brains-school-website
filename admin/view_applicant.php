@@ -40,6 +40,7 @@
 		<div class="side-bar">
             <ul>
                 <li><a href="application_list.php" class="active"><i class="fa fa-caret-down"></i> Application List</a></li>
+                <li><a href="email_list.php"><i class="fa fa-caret-right"></i> Subscribers List</a></li>
                 <li><a href="gallery_form.php"><i class="fa fa-caret-right"></i> Gallery</a></li>
     		    <li><a href="event_page.php"><i class="fa fa-caret-right"></i> Events/Annoucement</a></li>
             </ul>

@@ -39,8 +39,8 @@
     <section id="side-bar">
 		<div class="side-bar">
             <ul>
-                <li><a href="application_list.php" class="active"><i class="fa fa-caret-down"></i> Application List</a></li>
-                <li><a href="email_list.php"><i class="fa fa-caret-right"></i> Subscribers List</a></li>
+                <li><a href="application_list.php"><i class="fa fa-caret-right"></i> Application List</a></li>
+                <li><a href="email_list.php" class="active"><i class="fa fa-caret-down"></i> Subscribers List</a></li>
                 <li><a href="gallery_form.php"><i class="fa fa-caret-right"></i> Gallery</a></li>
     		    <li><a href="event_page.php"><i class="fa fa-caret-right"></i> Events/Annoucement</a></li>
             </ul>
@@ -50,36 +50,38 @@
     <main>
         <section class="content-container">
             <div class="page-name">
-                <h2>Application List</h2>
+                <h2>Subscribers</h2>
             </div>
+            <div class="white-container email">
+                <h2>Subscribers List</h2> 
+                <div class="dl-btn">Download CSV</div>
+                <div class="email-container">
+                    <?php
+                        include '../assets/db/connect.php';
 
-            <div class="white-container application">
-                <h2>Applied Student Form</h2>
-                <?php
-                    include '../assets/db/connect.php';
-
-                        $stmt = $conn -> prepare ("SELECT * FROM application_form ORDER BY id desc");
+                        $stmt = $conn -> prepare ("SELECT * FROM subscribers ORDER BY id desc");
                         $stmt -> execute();
                         $result = $stmt->Get_Result();
                         if ($result -> num_rows > 0) {
                             while ($row = $result -> fetch_assoc()) {
                                 $id = $row["id"];
-                                $img = $row["passport"];
-                                $name = $row["student_name"];
-                                $school = $row["school"];
-                                $date = $row["date"];
+                                $sub_email = $row["email"];
 
-                        echo '<div class="gallery-list">
-                                <div class="gallery-list-child "><h1>#AP'.$id.'</h1></div>
-                                <div class="gallery-list-child"><img src="../assets/images/application-form/passport/'.$img.'"></div>
-                                <div class="gallery-list-child child">'.$name.'</div>
-                                <div class="gallery-list-child child">'.$school.'</div>
-                                <div class="gallery-list-child child">'.$date.'</div>
-                                <div class="gallery-list-child "><a href="view_applicant.php?id='.$id.'" class="delete">View</a></div>
-                            </div>';
+                                echo '<div class="flex">
+                                        <div class="id">#S'.$id.'</div>
+                                        <div class="email-list">'.$sub_email.'</div>
+                                        <div class="copy"><i class="fa fa-copy"></i></div>
+                                    </div>';
+                            }
                         }
-                    }
-                ?>
+                    ?>
+                    
+                    <div class="flex">
+                        <div class="id">#S1</div>
+                        <div class="email-list">oluwoleemmanueladewole212@gmail.com</div>
+                        <div class="copy"><i class="fa fa-copy"></i></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

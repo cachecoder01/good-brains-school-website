@@ -397,6 +397,49 @@ select.am {
     text-decoration: none;
 }
 
+/*=== Sub Page ===*/
+.email {
+    position: relative;
+    width: 70%;
+}
+.email-container {
+    width: 90%;
+    margin: auto;
+    border: thin solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+}
+.email .dl-btn {
+    color: white;
+    width: 150px;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+}
+.email-container .flex {
+    margin: 15px;
+}
+.id {
+    border-right: thin solid #eee;
+    padding-right: 10px;
+    width: 10%;
+    text-align: center;
+}
+.email-list {
+    width: 60%;
+}
+.copy {
+    width: 20%;
+    text-align: center;
+}
+.copy i {
+    background-color: #0740d0;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
 .form_message {
     width: 20%;
     padding: 20px;

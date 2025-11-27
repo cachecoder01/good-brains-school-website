@@ -40,7 +40,8 @@ session_start();
 		<div class="side-bar">
             <ul>
                 <li><a href="application_list.php"><i class="fa fa-caret-right"></i> Application List</a></li>
-                <li><a href="gallery_form.php" ><i class="fa fa-caret-down"></i> Gallery</a></li>
+                <li><a href="email_list.php"><i class="fa fa-caret-right"></i> Subscribers List</a></li>
+                <li><a href="gallery_form.php" ><i class="fa fa-caret-right"></i> Gallery</a></li>
     		    <li><a href="event_page.php" class="active"><i class="fa fa-caret-down"></i> Events/Annoucement</a></li>
             </ul>
 		</div>
@@ -99,8 +100,8 @@ session_start();
                                 <div style="display: flex; gap: 10px; width: 100%;">
                                     <input type="time" name="time" class="time" required>
                                     <select input type="text" name="am" class="am">
-                                        <option>Am</option>
-                                        <option>Pm</option>
+                                        <option>AM</option>
+                                        <option>PM</option>
                                     </select>
                                 </div>
                             </div>
