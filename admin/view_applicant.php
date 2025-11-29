@@ -84,17 +84,21 @@
                 <div class="application-container">
                     <div class="flex">
                         <div class="child center"><img src="../assets/images/application-form/passport/<?= $img ?>"></div>
-                        <div class="flex child">
+                        <div class="child">
                             <p>Name: <span><?= $name ?></span></p>
+                            <p>Studet Age: <span><?= $age ?></span></p>                            
+                            <p>Email: <span><?= $email ?></span></p>
+                            <p>Date: <span><?= $date ?></span></p>                            
+                        </div>
+                        <div  class="child">                            
                             <p>School Applied For: <span><?= $school ?></span></p>
                             <p>Current/Past School: <span><?= $past_school ?></span></p>
                             <p>Current/Past Class: <span><?= $past_class ?></span></p>
-                            <p>Studet Age: <span><?= $age ?></span></p>
+                        </div>
+                        <div class="child">                            
                             <p>Guardian Name: <span><?= $g_name ?></span></p>
-                            <p>Email: <span><?= $email ?></span></p>
                             <p>Phone: <span><?= $phone ?></span></p>
                             <p>Location: <span><?= $location ?></span></p>
-                            <p>Date: <span><?= $date ?></span></p>
                         </div>
                     </div>
                     <div class="border">
@@ -151,8 +155,8 @@
                     </div>
                 </div>
                 <div class="btn-container">
-                    <div class="dl-btn"><a href="#" >Download</a></div>
-                    <div class="dl-btn"><a href="#" >Print</a></div>
+                    <div class="dl-btn"><a href="download_pdf.php?id=<?= $id ?>" >Download</a></div>
+                    <div class="dl-btn"><a onclick="window.print()">Print</a></div>
                 </div>
             </div>
         </section>

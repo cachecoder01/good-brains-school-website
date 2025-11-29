@@ -54,7 +54,7 @@
             </div>
             <div class="white-container email">
                 <h2>Subscribers List</h2> 
-                <div class="dl-btn">Download CSV</div>
+                <a href="download_email.php" class="dl-btn">Download CSV</a>
                 <div class="email-container">
                     <?php
                         include '../assets/db/connect.php';
@@ -69,31 +69,31 @@
 
                                 echo '<div class="flex">
                                         <div class="id">#S'.$id.'</div>
-                                        <div class="email-list">'.$sub_email.'</div>
-                                        <div class="copy"><i class="fa fa-copy"></i></div>
+                                        <div class="email-list" id="email-'.$id.'">'.$sub_email.'</div>
+                                        <div class="copy">
+                                            <button onclick="copyEmail('.$id.')"><i class="fa fa-copy"></i></button>
+                                        </div>
                                     </div>';
                             }
                         }
                     ?>
-                    
-                    <div class="flex">
-                        <div class="id">#S1</div>
-                        <div class="email-list">oluwoleemmanueladewole212@gmail.com</div>
-                        <div class="copy"><i class="fa fa-copy"></i></div>
-                    </div>
                 </div>
             </div>
         </section>
     </main>
     
     <script>
-        const image = document.querySelector("#preview"),
-        input = document.querySelector("input");
+        function copyEmail(id) {
+    const emailText = document.getElementById('email-' + id).innerText;
 
-        input = addEventListener("change", () => {
-            image.style.display = "block";
-            image.src = URL.createObjectURL(input.files[0]);
+    navigator.clipboard.writeText(emailText)
+        .then(() => {
+            alert("Email copied: " + emailText);
+        })
+        .catch(err => {
+            console.error("Failed to copy: ", err);
         });
+}
     </script>
 </body>
 </html>
