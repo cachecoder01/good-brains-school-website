@@ -183,31 +183,35 @@
                     <?php
                         include 'assets/db/connect.php';
 
-                        $stmt = $conn -> prepare ("SELECT DISTINCT category FROM gallery ORDER BY id desc");
+                        $stmt = $conn -> prepare ("SELECT * FROM gallery ORDER BY id desc");
                         $stmt -> execute();
                         $result = $stmt->Get_Result();
                         if ($result -> num_rows > 0) {
                             while ($row = $result -> fetch_assoc()) {
+                                $img = $row["image"];
                                 $cat = $row["category"];
 
-                                $stmt2 = $conn->prepare("SELECT * FROM gallery WHERE category=? limit 2 ");
-                                $stmt2 -> bind_param("s", $cat);
-                                $stmt2 -> execute();
-                                $result2 = $stmt2 -> Get_Result();
-                                if ($result2 -> num_rows > 0 ){
-                                    while ($row = $result2 -> fetch_assoc()) {
-                                    $img = $row["image"];
-                                    echo '<div class="img">
-                                            <img src="assets/images/gallery/'.$img.'">
-                                            <div class="overlay">
-                                                <p>'.$cat.'</p>
-                                            </div>
-                                        </div>';
-                                    }
-                                }                            
+                            echo '<div class="img">
+                                    <img src="assets/images/gallery/'.$img.'">
+                                        <div class="overlay">
+                                            <p>'.$cat.'</p>
+                                        </div>
+                                </div>';
                             }
                         }
                     ?>
+                    <div class="img">
+                        <img src="assets/images/gallery/doug-linstedt-jEEYZsaxbH4-unsplash.jpg">
+                        <div class="overlay">
+                            <p>Quiz Day</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="assets/images/gallery/girl-boy-having-fun-with-school-supplies.jpg">
+                        <div class="overlay">
+                            <p>Fruit Day</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="more-btn"><a href="gallery.php">View More</a></div>
             </div>
@@ -228,23 +232,22 @@
                                 while ($row = $result -> fetch_assoc()) {
                                     $cat = $row["category"];
                                     $date = $row["event_date"];
-                                    $title = $row["type"];
+                                    $title = $row["title"];
                                     $desc = $row["description"];
                                     $time = $row["time"];
-                                    $am = $row["am"];
 
                                 echo '<div data-aos="fade-left" class="news-box">
                                         <div class="news-head">
                                             <div class="child">
                                                 <div class="category">'.$cat.'</div>
                                             </div>
-                                            <div class="child">
+                                             <div class="child">
                                                 <div class="date"><i class="fa fa-calendar-alt"></i> '.$date.'</div>
+                                                <div class="date"><i class="far fa-clock"></i> '.$time.'</div>
                                             </div>                                
                                         </div>
                                         <h2>'.$title.'</h2>
                                         <p>'.$desc.'</p>
-                                        <div>'.$time.' '.$am.'</div>
                                     </div>';
                                 }
                             }else {
@@ -258,10 +261,10 @@
 			            <div class="container">
 				            <div class="newsletter">
 						        <p>Sign Up for the <strong>NEWSLETTER</strong></p>
-						        <!--<form method="POST" action="https://api.web3forms.com/submit">
+						        <form method="POST" action="https://api.web3forms.com/submit">
                                     
                                     <input type="hidden" name="access_key" value="31083e90-e6a1-4fb9-84d9-d21e4a99738d">
-                                     Honeypot Spam Protection 
+                                    <!-- Honeypot Spam Protection -->
                                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                                     <input type="hidden" name="subject" value="News Letter email">
@@ -271,11 +274,8 @@
                                     <input type="hidden" name="redirect" value="http://localhost/goodbrains/thanks.html">
 
 						            <button class="newsletter-btn"><i class="far fa-envelope"></i> Subscribe</button>
-					            </form>-->
-                                <form method="POST" action="sub_email.php">
-                                    <input class="input" type="email" name="email" placeholder="Enter Your Email" required>
-                                    <button class="newsletter-btn"><i class="far fa-envelope"></i> Subscribe</button>
-                                </form>
+					            </form>
+                                
 						    </div>
 			            </div>
 		            </div>

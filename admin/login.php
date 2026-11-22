@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pass = htmlspecialchars(strip_tags($pass), ENT_QUOTES, 'UTF-8');
 
     $s_email = 'goodbrainsdiamondschool@gmail.com';
-    $pass_hash = '$2y$10$zTeW930VT0X2QrzoeyzQkuZkiUnC3NpfWaFNKDArdS.xU.vzi1UGu';
+    $pass_hash = '$2y$10$JEs7KhKah4NRpZNcQcoWruvxyoqJPtvNUdaOmIv2shZU2vEZKXgXa'; //goodbrains1234
 
     if (password_verify($pass, $pass_hash) AND $email == $s_email) {
 

@@ -424,17 +424,24 @@ nav {
     background-color: rgb(220, 11, 11);
     border-radius: 12px;
     color: #fff;
-    font-size: small;
+    font-size: 0.7rem;
+    font-weight: 600;
     text-align: center;
-    width: 100px;
+    width: auto;
+    padding: 0.25rem 0.75rem;
+    display: inline-block;
 }
 .date {
     text-align: right;
     color: #777676;
+    font-size: 12px;
 }
 .news-box h2 {
     font-size: 18px;
     text-transform: capitalize;
+}
+.news-box p {
+    font-size: 0.9rem;
 }
 
 /*=== Newsletter ===*/
